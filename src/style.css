@@ -140,7 +140,7 @@ img{
         height: 25px;
     }
 }
-    
+/* esto es pa que cuando gires la pantalla se aprecie */
 @media screen and (max-width:776px) and (orientation:landscape){
     .nav-menu-list{
         margin:5px 0 0 0;
