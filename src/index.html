@@ -5,13 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/e9f8da1aa8.js" crossorigin="anonymous"></script>
     <title>Data Ghibli</title>
 </head>
-<nav>Aqui Menu Responsive</nav>
-
 <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <header class="header">
+         <nav class="nav">
+             <div class="logo">
+                 <a href="#"><img src="/img/data-ghibli.png" alt="Data-Ghibli"></a>
+             </div>
+             <span class="nav-toggle" ><i class="fas fa-bars"></i></span>
+             <ul class="nav-menu" >
+                 <li class="nav-menu-list">
+                     <a href="#" class="nav-menu-link">Movies</a>
+                 </li>
+                 <li class="nav-menu-list" >
+                     <a href="#" class="nav-menu-link" id="nav-menu-list">Categories</a>
+                    <ul class="nav-categories">
+                        <li class="nav-categories-list">
+                            <a href="#" class="nav-categories-link">The most popular</a>
+                        </li>
+                        <li class="nav-categories-list">
+                            <a href="#" class="nav-categories-link">Directed by Hayao Miyazaki</a>
+                        </li>
+                        <li class="nav-categories-list">
+                            <a href="#" class="nav-categories-link">Best rated</a>
+                        </li>
+                        <li class="nav-categories-list">
+                            <a href="#" class="nav-categories-link">Directed by Isao Takahata</a>
+                        </li>
+                    </ul>
+                 </li>
+                 <li class="nav-menu-list"><input class="search" type="text" placeholder="Search"></li>
+             </ul>
+         </nav>
+    </header>
+    <main>
+        <section>Section</section>
+    </main>
+    <footer>
+    </footer>
+    <script src="index.js" type="module"></script>
+    </script>
 </body>
 
 </html>
