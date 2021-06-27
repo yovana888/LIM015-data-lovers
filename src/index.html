@@ -10,19 +10,20 @@
     <script src="https://kit.fontawesome.com/e9f8da1aa8.js" crossorigin="anonymous"></script>
     <title>Data Ghibli</title>
 </head>
+
 <body>
     <header class="header">
-         <nav class="nav">
-             <div class="logo">
-                 <a href="#"><img src="/img/data-ghibli.png" alt="Data-Ghibli"></a>
-             </div>
-             <span class="nav-toggle" ><i class="fas fa-bars"></i></span>
-             <ul class="nav-menu" >
-                 <li class="nav-menu-list">
-                     <a href="#" class="nav-menu-link">Movies</a>
-                 </li>
-                 <li class="nav-menu-list" >
-                     <a href="#" class="nav-menu-link" id="nav-menu-list">Categories</a>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#"><img src="img/data-ghibli.png" alt="Data-Ghibli" class="logo_imagen"></a>
+            </div>
+            <span class="nav-toggle"><i class="fas fa-bars"></i></span>
+            <ul class="nav-menu">
+                <li class="nav-menu-list">
+                    <a href="#" class="nav-menu-link">Movies</a>
+                </li>
+                <li class="nav-menu-list">
+                    <a href="#" class="nav-menu-link" id="nav-menu-list">Categories</a>
                     <ul class="nav-categories">
                         <li class="nav-categories-list">
                             <a href="#" class="nav-categories-link">The most popular</a>
@@ -37,15 +38,52 @@
                             <a href="#" class="nav-categories-link">Directed by Isao Takahata</a>
                         </li>
                     </ul>
-                 </li>
-                 <li class="nav-menu-list"><input class="search" type="text" placeholder="Search"></li>
-             </ul>
-         </nav>
+
+                </li>
+                <li class="nav-menu-list mode-dark"> <i class="fa fa-moon-o"></i> Dark Mode <i class="fa fa-toggle-on toggle ml-2" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>Section
-        hola khe ase Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, provident beatae vel fuga numquam corrupti blanditiis odio eius, tempore, aut a suscipit facere dolore soluta modi optio adipisci consequuntur culpa! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, odio. Eius iure ea expedita totam nesciunt sit facere, ipsam, rem, nobis necessitatibus enim aut dolor illum et possimus dolorum beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam facere id totam, consequuntur laborum doloremque modi consequatur alias unde sapiente, dicta recusandae itaque numquam nam vitae deserunt, nostrum officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, soluta enim. Nulla eos tempora beatae cum neque perspiciatis corporis ullam, laudantium tenetur facilis corrupti vero quisquam placeat vel, provident cupiditate.hola khe ase Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, provident beatae vel fuga numquam corrupti blanditiis odio eius, tempore, aut a suscipit facere dolore soluta modi optio adipisci consequuntur culpa! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, odio. Eius iure ea expedita totam nesciunt sit facere, ipsam, rem, nobis necessitatibus enim aut dolor illum et possimus dolorum beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam facere id totam, consequuntur laborum doloremque modi consequatur alias unde sapiente, dicta recusandae itaque numquam nam vitae deserunt, nostrum officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, soluta enim. Nulla eos tempora beatae cum neque perspiciatis corporis ullam, laudantium tenetur facilis corrupti vero quisquam placeat vel, provident cupiditate.
-    </section>
+        <section>
+            <div class="contenedor">
+                <div class="slider-contenedor">
+                    <section class="contenido-slider" id="slider-1">
+                        <div>
+                            <h1>Studio <span id="text-ghibli">Ghibli</span> Movies</h1>
+                            <p class="text-center">Studio Ghibli, from the legendary anime creator Hayao Miyazaki, is recognized for its fascinating and cult animated films, which is why on this page you will learn a little more about each one of them.</p>
+                            <br>
+                            <br>
+                            <img src="img/img_linea.png" alt="" id="img_linea">
+                        </div>
+
+                    </section>
+                    <section class="contenido-slider" id="slider-2">
+                        <div>
+
+                            <h2>"Spirited Away" will be a play</h2>
+                            <hr color="#FF3060" size=5 width=60 class="line">
+                            <p class="text-left">According to IndieWire, Spirited Away is going to become a play produced by Toho and directed by British John Baird, responsible for other hits on stage such as Les Misérables. or March 2022 in Tokyo, and then start a tour
+                                of Japan that will include performances in cities such ...</p>
+                            <a href="https://n9.cl/ro44c" target="_blank">See more</a>
+                        </div>
+                        <img src="img/chihiro.png" alt="">
+
+                    </section>
+                    <section class="contenido-slider" id="slider-3">
+                        <div>
+                            <h2>Hayao Miyazaki turns 80</h2>
+                            <hr color="#FF3060" size=5 width=60 class="line">
+                            <p class="text-left">An icon of Japanese cinema and the world of 2D animation. The filmmaker and co-founder of Studio Ghibli, Hayao Miyazaki, celebrates his 80th birthday this January 5, in the middle of the preparation of his next film entitled
+                                "How do you live?", whose premiere is scheduled between 2022 and 2023...
+                            </p>
+                            <a href="https://n9.cl/081eq" target="_blank">Ver más</a>
+                        </div>
+                        <img src="img/hanao.png" alt="">
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
     </footer>
