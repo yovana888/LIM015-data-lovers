@@ -1,3 +1,4 @@
+
 addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     if (navToggle) {
@@ -7,6 +8,7 @@ addEventListener('DOMContentLoaded', () => {
         })
     }
 })
+
 let change = false;
 const categories = document.getElementById('nav-menu-list');
 categories.addEventListener('click', () => {
@@ -53,3 +55,4 @@ function slides() {
 }
 
 /* Fin Codigo Slider */
+

@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -276,6 +277,7 @@ body {
         text-align: center;
         flex-direction: column;
     }
+
     .nav-menu-list {
         padding: 0px;
         line-height: 20px;
@@ -294,6 +296,7 @@ body {
         background: #1e122e;
         display: none;
     }
+
     .nav-categories-link {
         font-size: 16px;
     }
@@ -302,6 +305,7 @@ body {
         height: 25px;
         font-size: 20px;
     }
+
     /*Para el Silder*/
     .contenido-slider {
         flex-direction: column-reverse;
