@@ -9,19 +9,6 @@ addEventListener('DOMContentLoaded', () => {
     }
 })
 
-let change = false;
-const categories = document.getElementById('nav-menu-list');
-categories.addEventListener('click', () => {
-    const navCategories = document.querySelector('.nav-categories');
-    if (change == false) {
-        navCategories.style.display = "block";
-        change = true;
-    } else {
-        navCategories.style.display = "none";
-        change = false;
-    }
-});
-
 /* Inicio Codigo Slider */
 
 let slider = document.querySelector(".slider-contenedor")
