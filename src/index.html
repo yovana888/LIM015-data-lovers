@@ -71,12 +71,20 @@
         </section>
         <section>
             <div class="container-select">
-                <div class="input-selector" >
-                    <i class="fas fa-search"></i><input type="search" id="search" class="input-data" placeholder="Search">
-
+                <div class="input-selector filter">
+                    <span class="icon-search">
+                        <label for="search">
+                            <i class="fas fa-search"></i>
+                        </label>
+                    </span>
+                    <input type="search" id="search" class="input-data" placeholder="Search">
                 </div>
+                <span class="icon-filter">
+                    <i class="fas fa-filter"></i>
+                </span>
+                
                 <div class="input-data-selector">
-                    <div class="input-selector" >
+                    <div class="input-selector">
                         <input type="list" list="directors" class="input-data" placeholder="Directors">
                         <datalist name="directors" id="directors">
                              <option value="Hayao Miyazaki "></option>
@@ -113,7 +121,7 @@
                             <option value="Most Recent"></option>
                             <option value="The oldest"></option>
                         </datalist>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -122,32 +130,48 @@
             <div class="card ">
                 <div class="card-contenido ">
 
-                    <div class="img-card">
+                    <div class="card-img">
                         <img src="https://picsum.photos/200/200/?random ">
                     </div>
 
-                    <div class="text-sumary ">
+                    <div class="text-card ">
                         <label>My Neighbor Totoro</label>
                         <span>1988</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor do eiusmod tempor incididunt ut aliqua...</p>
-                        <label>Director: Hayao Miyazaki</label>
-                        <label>Productor: Hayao Miyazaki</label>
+                        <p class="text-sumary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor do eiusmod tempor incididunt ut aliqua...</p>
+                        <label class="text-sumary">Director: Hayao Miyazaki</label>
+                        <label class="text-sumary">Productor: Hayao Miyazaki</label>
                     </div>
                 </div>
             </div>
 
             <div class="card ">
                 <div class="card-contenido ">
-                    <div class="img-card">
+                    <div class="card-img">
                         <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
                     </div>
 
-                    <div class="text-sumary ">
+                    <div class="text-card ">
                         <label>My Neighbor Totoro</label>
                         <span>1988</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor do eiusmod tempor incididunt ut aliqua...</p>
-                        <label>Director: Hayao Miyazaki</label>
-                        <label>Productor: Hayao Miyazaki</label>
+                        <p class="text-sumary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor do eiusmod tempor incididunt ut aliqua...</p>
+                        <label class="text-sumary">Director: Hayao Miyazaki</label>
+                        <label class="text-sumary">Productor: Hayao Miyazaki</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="card-contenido ">
+                    <div class="card-img">
+                        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
+                    </div>
+
+                    <div class="text-card ">
+                        <label>My Neighbor Totoro</label>
+                        <span>1988</span>
+                        <p class="text-sumary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor do eiusmod tempor incididunt ut aliqua...</p>
+                        <label class="text-sumary">Director: Hayao Miyazaki</label>
+                        <label class="text-sumary">Productor: Hayao Miyazaki</label>
                     </div>
                 </div>
             </div>
@@ -157,6 +181,27 @@
 
     </main>
     <footer>
+        <nav class="nav-footer">
+            <ul class="nav-menu-footer">
+               <li >
+                    <a href="https://www.instagram.com/ghibliuk/?hl=es" class="nav-footer-link" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li >
+                    <a href="https://www.ghibli.jp/" class="nav-footer-link" title="スタジオジブリ ホーム">
+                        <img src="https://www.ghibli.jp/img/home.png" width="20" height="20" alt="STUDIO GHIBLI ">
+                    </a>
+                </li>
+                <li > 
+                    <a href="https://twitter.com/JP_GHIBLI" class="nav-footer-link" >
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="nav-footer-text"> © 2021 DATAGHIBLI</p>
+        </nav>
+        
     </footer>
     <script src="index.js "></script>
     </script>
