@@ -33,13 +33,9 @@ body {
     cursor: pointer;
 }
 
-.nav-menu,
-.nav-categories {
+.nav-menu {
     list-style: none;
     padding: 0;
-}
-
-.nav-menu {
     display: flex;
     flex-direction: row;
 }
@@ -56,17 +52,7 @@ body {
     padding: 20px 0px 0px 50px;
 }
 
-.nav-categories {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background: #2B1B42;
-    display: none;
-    margin-top: 10px;
-}
-
-.nav-menu-link,
-.nav-categories-link {
+.nav-menu-link {
     display: block;
     padding: 20px;
     color: white;
@@ -83,30 +69,11 @@ body {
     border-radius: 10px;
 }
 
-.nav-categories-link {
-    font-size: 16px;
-}
-
-.nav-menu-link:hover,
-.nav-categories-link:hover {
+.nav-menu-link:hover{
     background: linear-gradient(95.41deg, #9B3CB7 9.04%, #FF3060 115.84%);
     box-shadow: 0px 0px 9px 3px #9F3CB4;
-    ;
     transition: .2s;
 }
-
-.search {
-    width: 250px;
-    height: auto;
-    font-size: 15px;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    color: #7e7b7b;
-    background-color: #fff;
-    padding: .375rem .75rem;
-}
-
 
 /* Fin header */
 
@@ -231,16 +198,11 @@ body {
     .nav-menu-list:last-child {
         padding-left: 25px;
     }
-    .search,
+    
     .nav-menu-link {
         font-size: 18px;
     }
-    .nav-categories-link {
-        font-size: 14px;
-    }
-    .search {
-        width: 180px;
-    }
+
     /*Para el Silder*/
     .contenido-slider>div {
         width: 40%;
@@ -289,23 +251,7 @@ body {
     .nav-menu-list:last-child {
         padding: 30px;
     }
-    .nav-categories {
-        position: static;
-        display: flex;
-        flex-direction: column;
-        background: #1e122e;
-        display: none;
-    }
-
-    .nav-categories-link {
-        font-size: 16px;
-    }
-    .search {
-        width: 200px;
-        height: 25px;
-        font-size: 20px;
-    }
-
+   
     /*Para el Silder*/
     .contenido-slider {
         flex-direction: column-reverse;
