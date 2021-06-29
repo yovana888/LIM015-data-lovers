@@ -1,4 +1,3 @@
-
 addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     if (navToggle) {
@@ -9,17 +8,17 @@ addEventListener('DOMContentLoaded', () => {
     }
 })
 
-let change = false;
-const categories = document.getElementById('nav-menu-list');
-categories.addEventListener('click', () => {
-    const navCategories = document.querySelector('.nav-categories');
-    if (change == false) {
-        navCategories.style.display = "block";
-        change = true;
-    } else {
-        navCategories.style.display = "none";
-        change = false;
-    }
+let change=false;
+const btnFilter =document.querySelector('.icon-filter');
+btnFilter.addEventListener('click',() =>{
+    const dataInputs=document.querySelector('.input-data-selector');
+   if (change==false){
+    dataInputs.style.display="block";
+    change=true;
+   }else {
+    dataInputs.style.display="none";
+    change=false;
+   }
 });
 
 /* Inicio Codigo Slider */
@@ -55,4 +54,3 @@ function slides() {
 }
 
 /* Fin Codigo Slider */
-
