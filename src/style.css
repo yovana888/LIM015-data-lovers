@@ -10,11 +10,14 @@ body {
     max-width: 100%;
     height: 50px;
 }
+
+
 /* Inicio header --------------------------------------*/
 
 .header {
     position: relative;
 }
+
 .nav-footer,
 .nav {
     position: absolute;
@@ -54,11 +57,11 @@ body {
 }
 
 .nav-menu-link {
-display: block;
+    display: block;
     padding: 20px;
     color: white;
     text-decoration: none;
-    font-size: 20px;  
+    font-size: 20px;
 }
 
 .mode-dark {
@@ -75,7 +78,11 @@ display: block;
     box-shadow: 0px 0px 9px 3px #9F3CB4;
     transition: .2s;
 }
+
+
 /* Fin header */
+
+
 /* Inicio Codigo para Slider -------------------------------------- */
 
 .contenedor {
@@ -132,7 +139,7 @@ display: block;
 
 .contenido-slider h1 {
     font-weight: bold;
-    font-size: 38px;
+    font-size: 40px;
 }
 
 .contenido-slider h2 {
@@ -178,7 +185,11 @@ display: block;
 .line {
     margin-left: 0;
 }
+
+
 /*Fin Codigo Slider*/
+
+
 /*Inicio Codigo Mode dark ---------------------------*/
 
 .toggle {
@@ -188,9 +199,13 @@ display: block;
 .ml-2 {
     margin-left: 0.4em;
 }
+
+
 /*Fin Codigo Mode dark */
 
+
 /* Inicio buscador*/
+
 .container-select {
     display: flex;
     flex-flow: row wrap;
@@ -208,36 +223,41 @@ display: block;
     width: 15vw;
     padding-left: 25px
 }
+
 .icon-search {
     position: absolute;
     width: 5vw;
     color: gray;
     top: 5px;
 }
+
 .input-data-selector {
     display: block;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .input-selector {
     position: relative;
 }
+
 .input-data,
 .input-data-short {
     width: 13vw;
     font-size: 15px;
-    border-width: 0px 0px 4px 0px;
+    border-width: 0px 0px 2px 0px;
     border-color: #FF3060;
     outline: none;
     padding: 5px 0;
 }
+
 .input-data-short {
     width: 9vw;
 }
+
 .icon-filter {
     display: none;
     color: gray;
@@ -245,9 +265,12 @@ display: block;
     cursor: pointer;
 }
 
+
 /*Fin Buscador */
 
+
 /*Inicio Codigo para Cards*/
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -263,202 +286,65 @@ display: block;
 
 .card-contenido {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
 }
 
 .card-img {
     grid-column: 1 / 2;
-    width: 150px;
-    height: 210px;
+    grid-row: 1 / 3;
+    height: 220px;
 }
 
 .card-img>img {
     width: 150px;
-    height: 210px;
+    height: 220px;
 }
+
+.text-card {
+    grid-column: 2 / 4;
+    background: #fff;
+    padding: 1em;
+    grid-row: 1 / 3;
+}
+
+.text-sumary {
+    font-size: 13px;
+}
+
+
 /*Fin Codigo para Cards*/
 
+
 /*  Inicio de footer */
-.nav-footer{
-background-color: #090413;
-display: flex;
-flex-direction: column;
-justify-content: center;
-height: fit-content;
+
+.nav-footer {
+    background-color: #090413;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
 }
-.nav-menu-footer{
-display: flex;
-flex-direction: row ;
-padding: 0;
-margin: 2vh;
+
+.nav-menu-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 2vh;
 }
+
 .nav-footer-text,
-.nav-footer-link{
-padding: 0px 20px;
-color: white;
-font-size: 20px;
+.nav-footer-link {
+    padding: 0px 20px;
+    color: white;
+    font-size: 20px;
 }
+
 .nav-footer-text {
     font-size: 11px;
     margin-top: 0px;
     margin-bottom: 2vh;
 }
+
+
 /*  Fin de footer */
-/*Inicio de medias--------------------------------------*/
-
-@media screen and (max-width:1024px) {
-    .logo_imagen {
-        max-width: 100%;
-        height: 40px;
-    }
-    .nav-menu-list {
-        padding: 0px 25px;
-    }
-    .nav-menu-list:last-child {
-        padding-left: 25px;
-    }
-    .nav-menu-link {
-        font-size: 18px;
-    }
-    /*Para el Silder*/
-    .contenido-slider>div {
-        width: 40%;
-        height: 70% !important;
-    }
-    .contenido-slider h2 {
-        margin-top: 15%;
-        font-size: 20px;
-    }
-    #img_linea {
-        width: 250px;
-        margin-top: -30px;
-        flex-direction: center;
-    }
-
-    /*Para el buscador*/
-    .input-data-selector { 
-        display: block;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 25px;
-    }
-    .input-data,
-    .input-data-short {
-        font-size: 12px;
-    }
-
-    /*Inicio Cards pendiente para iopad pro*/
-    .cards {
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:776px) {
-    .nav {
-        height: 100px;
-    }
-    .nav-toggle {
-        display: inline-flex;
-    }
-    .logo_imagen {
-        max-width: 100%;
-        height: 50px;
-    }
-    .nav-menu {
-        position: absolute;
-        width: 100vw;
-        top: -100vh;
-        transition: all .2;
-        text-align: center;
-        flex-direction: column;
-        background: rgba(31, 25, 53, 0.5);
-        backdrop-filter: blur(20px);
-    }
-    .nav-menu-list {
-        padding: 0px;
-        line-height: 20px;
-    }
-    .nav-menu-link {
-        font-size: 20px;
-        color: white;
-    }
-    .nav-menu-list:last-child {
-        padding: 30px;
-    }
-    /*Para el Silder*/
-    .contenido-slider {
-        flex-direction: column-reverse;
-    }
-    .contenido-slider>div {
-        width: 80%;
-    }
-    .contenido-slider>img {
-        display: none;
-    }
-
-    /*Para el buscador*/
-    .container-select {
-        position: relative;
-    }
-
-    #search{
-        width:200px;
-    }
-    .icon-filter {
-        display: inline-flex;
-    }
-    .input-data-selector {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top:60px;
-        right:8vw;
-        display: none;
-    }
-
-    .input-selector{
-        background-color: white;
-        padding: 15px;
-    }
-    .filter{
-        padding: 0;
-    }
-
-    .input-data,
-    .input-data-short {
-        width: 180px;
-        font-size:15px;
-    }
-
-    /*Inicio Cards*/
-    .cards {
-        justify-content: space-evenly;
-    }
-    .card {
-        flex: 0 0 150px;
-    }
-    .card-img {
-        grid-column: 1 / 3;
-    }
-    .text-sumary {
-        display: none;
-    }
-    /*Fin Cards*/
-}
-
-/* esto es pa que cuando gires la pantalla se aprecie el header*/
-
-@media screen and (max-width:776px) and (orientation:landscape) {
-    .nav-menu-list {
-        margin: 5px 0 0 0;
-    }
-    .nav-menu {
-        overflow: scroll;
-        height: calc(100%-100px);
-    }
-}
-/*Fin de medias*/

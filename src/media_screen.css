@@ -1,0 +1,164 @@
+/*Inicio de medias--------------------------------------*/
+
+@media screen and (max-width:1024px) {
+    .logo_imagen {
+        max-width: 100%;
+        height: 40px;
+    }
+    .nav-menu-list {
+        padding: 0px 25px;
+    }
+    .nav-menu-list:last-child {
+        padding-left: 25px;
+    }
+    .nav-menu-link {
+        font-size: 18px;
+    }
+    /*Para el Silder*/
+    .contenido-slider>div {
+        width: 40%;
+        height: 70% !important;
+    }
+    .contenido-slider h2 {
+        margin-top: 15%;
+        font-size: 20px;
+    }
+    #img_linea {
+        width: 250px;
+        margin-top: -30px;
+        flex-direction: center;
+    }
+    /*Para el buscador*/
+    .input-data-selector {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px;
+    }
+    .input-data,
+    .input-data-short {
+        font-size: 12px;
+    }
+    /*Inicio Cards pendiente para iopad pro*/
+    .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:778px) {
+    .nav {
+        height: 100px;
+    }
+    .nav-toggle {
+        display: inline-flex;
+    }
+    .logo_imagen {
+        max-width: 100%;
+        height: 50px;
+    }
+    .nav-menu {
+        position: absolute;
+        width: 100vw;
+        top: -100vh;
+        transition: all .2;
+        text-align: center;
+        flex-direction: column;
+        background: rgba(31, 25, 53, 0.5);
+        backdrop-filter: blur(20px);
+    }
+    .nav-menu-list {
+        padding: 0px;
+        line-height: 20px;
+    }
+    .nav-menu-link {
+        font-size: 20px;
+        color: white;
+    }
+    .nav-menu-list:last-child {
+        padding: 30px;
+    }
+    /*Para el Silder*/
+    .contenido-slider {
+        flex-direction: column-reverse;
+    }
+    .contenido-slider>div {
+        width: 80%;
+    }
+    .contenido-slider>img {
+        display: none;
+    }
+    /*Para el buscador*/
+    .container-select {
+        position: relative;
+    }
+    #search {
+        width: 200px;
+    }
+    .icon-filter {
+        display: inline-flex;
+    }
+    .input-data-selector {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 8vw;
+        display: none;
+    }
+    .input-selector {
+        background-color: white;
+        padding: 15px;
+    }
+    .filter {
+        padding: 0;
+    }
+    .input-data,
+    .input-data-short {
+        width: 180px;
+        font-size: 15px;
+    }
+    /*Inicio Cards*/
+    .cards {
+        justify-content: center;
+    }
+    .card {
+        flex: 0 0 180px;
+    }
+    .card-img {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    .card-img>img {
+        width: 180px;
+        height: 230px;
+    }
+    .text-card {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        height: 30px;
+    }
+    .text-sumary {
+        display: none;
+    }
+    /*Fin Cards*/
+}
+
+
+/* esto es pa que cuando gires la pantalla se aprecie el header*/
+
+@media screen and (max-width:778px) and (orientation:landscape) {
+    .nav-menu-list {
+        margin: 5px 0 0 0;
+    }
+    .nav-menu {
+        overflow: scroll;
+        height: calc(100%-100px);
+    }
+}
+
+
+/*Fin de medias*/
