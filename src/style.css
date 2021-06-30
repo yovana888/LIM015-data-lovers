@@ -204,7 +204,7 @@ body {
 /*Fin Codigo Mode dark */
 
 
-/* Inicio buscador*/
+/* Inicio buscador --------------------------------------*/
 
 .container-select {
     display: flex;
@@ -214,7 +214,7 @@ body {
     background-color: white;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
-    height: 10vh;
+    height: 60px;
     width: 80vw;
     margin: 4vh auto;
 }
@@ -228,7 +228,7 @@ body {
     position: absolute;
     width: 5vw;
     color: gray;
-    top: 5px;
+    top: 4px;
 }
 
 .input-data-selector {
@@ -248,10 +248,10 @@ body {
 .input-data-short {
     width: 13vw;
     font-size: 15px;
-    border-width: 0px 0px 2px 0px;
+    border-width: 0px 0px 3px 0px;
     border-color: #FF3060;
     outline: none;
-    padding: 5px 0;
+    padding: 4px 0;
 }
 
 .input-data-short {
@@ -269,7 +269,7 @@ body {
 /*Fin Buscador */
 
 
-/*Inicio Codigo para Cards*/
+/*Inicio Codigo para Cards --------------------------------------*/
 
 .cards {
     display: flex;
@@ -316,7 +316,7 @@ body {
 /*Fin Codigo para Cards*/
 
 
-/*  Inicio de footer */
+/*  Inicio de footer -------------------------------------- */
 
 .nav-footer {
     background-color: #090413;
