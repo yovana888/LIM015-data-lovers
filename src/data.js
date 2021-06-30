@@ -8,13 +8,4 @@ export const anotherExample = () => {
   return 'OMG';
 };
  */
-const data= {
-  getData: function() {
-    fetch('ghibli.json')
-    .then(res=> res.json())
-    .then(data => {
-      console.log(data)
-    })
-  }
-};
-export default data;
+

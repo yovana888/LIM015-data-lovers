@@ -19,12 +19,14 @@ window.addEventListener("load", function() {
             `<div class="card-contenido">
                 <div class="card-img">
                     <img src="${getAlldata[key].poster}">
+                    <span class="year-card"> ${getAlldata[key].release_date}</span>
+                    <span class="score-card"> ${getAlldata[key].rt_score}<i class="fas fa-star"></i></span>
                 </div>
                 <div class="text-card">
-                    <label>${getAlldata[key].title}</label>
+                    <h1 class="title-card">${getAlldata[key].title}</h1>
                     <p class="text-sumary">${description_corto}...</p>
-                    <label class="text-sumary">Director: ${getAlldata[key].director}</label>
-                    <label class="text-sumary">Producer: ${getAlldata[key].producer}</label>
+                    <p class="text-sumary maker">Director: ${getAlldata[key].director}</p>
+                    <p class="text-sumary maker">Producer: ${getAlldata[key].producer}</p>
                 </div>
             </div>`;
     }

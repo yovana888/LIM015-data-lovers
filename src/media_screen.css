@@ -48,7 +48,7 @@
     .cards {
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -66,6 +66,7 @@
     .nav-menu {
         position: absolute;
         width: 100vw;
+        height: 85vh;
         top: -100vh;
         transition: all .2;
         text-align: center;
@@ -80,6 +81,12 @@
     .nav-menu-link {
         font-size: 20px;
         color: white;
+    }
+    .nav-menu-link:hover {
+        background: linear-gradient(95.41deg, #9B3CB7 9.04%, #FF3060 115.84%);
+        box-shadow: 0px 0px 9px 3px #9F3CB4;
+        transition: .2s;
+        color:white;
     }
     .nav-menu-list:last-child {
         padding: 30px;
@@ -141,11 +148,18 @@
     .card-img>img {
         width: 180px;
         height: 230px;
+        border-radius: 20px 20px 0px 0px;
     }
+
     .text-card {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
-        height: 30px;
+        height: 45px;
+        padding: auto;
+        border-radius:0px 0px 20px 20px ;
+    }
+    .title-card{
+        text-align: center; 
     }
     .text-sumary {
         display: none;
