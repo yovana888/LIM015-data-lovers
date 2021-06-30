@@ -1,26 +1,32 @@
 /* import { example } from './data.js';
 console.log(example, data);
+import data from './data.js'; 
  */
 import dataGhibli from './data/ghibli/ghibli.js';
-/* import data from './data.js'; */
-const getAlldata= dataGhibli.films;
+const getAlldata = dataGhibli.films;
+const cardsList = document.getElementById("cardsList");
 
 window.addEventListener("load", function() {
-    for (let i = 0; i < getAlldata.length; i++) {
-        var addHtml ='<div class="card">'
-        +'<div class="card-contenido">'
-        +'<div class="card-img">'
-        +'<img src="https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg">'
-        +'</div>'
-        +'<div class="text-card ">'
-        +'<label>'+getAlldata[1].title+'</label>'
-        +'<p class="text-sumary">Lorem ipsum dolor sit amet adipisicing elit. Fugit ducimus, veniam fugiat aliquid autem modi odio id necessitatibus distinctio nulla beatae fugiat aliquid autem modi ...</p>'
-        +' <label class="text-sumary">Director: Hayao Miyazaki</label>'
-        +'<label class="text-sumary">Productor: Hayao Miyazaki</label>'
-        +'</div>'
-        +'</div>'
-        +'</div>';
-    }
-    document.getElementById("cardsList").innerHTML = addHtml;  
+    for (let key in getAlldata) {
 
- });
+        const card = document.createElement('div');
+        card.className = "card";
+        let description = getAlldata[key].description;
+        let description_split = description.split(" ", 30);
+        let description_corto = description_split.join(" ");
+        cardsList.appendChild(card).innerHTML =
+
+            `<div class="card-contenido">
+                <div class="card-img">
+                    <img src="${getAlldata[key].poster}">
+                </div>
+                <div class="text-card">
+                    <label>${getAlldata[key].title}</label>
+                    <p class="text-sumary">${description_corto}...</p>
+                    <label class="text-sumary">Director: ${getAlldata[key].director}</label>
+                    <label class="text-sumary">Producer: ${getAlldata[key].producer}</label>
+                </div>
+            </div>`;
+    }
+
+});
