@@ -8,10 +8,10 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 200px;
 }
 
 .col-1 {
+    padding: 5em;
     background: palevioletred;
     grid-column: 1 / 2;
 }
