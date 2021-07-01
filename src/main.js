@@ -6,7 +6,9 @@ import dataGhibli from './data/ghibli/ghibli.js';
 const getAlldata = dataGhibli.films;
 const cardsList = document.getElementById("cardsList");
 
-window.addEventListener("load", function() {
+// Inicio Cargar Data 
+window.addEventListener("load", () => {
+
     for (let key in getAlldata) {
 
         const card = document.createElement('div');
@@ -32,3 +34,5 @@ window.addEventListener("load", function() {
     }
 
 });
+
+// Fin Cargar Data
