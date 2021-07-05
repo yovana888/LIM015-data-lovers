@@ -1,11 +1,13 @@
-import { showData, filterByDirector, filterByProducer, filterBySort } from './data.js';
+import { showData,filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
 import dataGhibli from './data/ghibli/ghibli.js';
 const allData = dataGhibli.films;
 const cardsList = document.querySelector("#cardsList");
 const selectDirector = document.querySelector("#directors");
 const selectProducer = document.querySelector("#producers");
 const selectSort = document.querySelector("#sort");
-//let inputSearch = document.querySelector("#search");
+let inputSearch = document.querySelector("#search");
+const ghibliNotFound = document.querySelector("#ghibli-notFound");
+
 
 // Funcion Cargar Data en Card
 function loadData(data) {
@@ -14,10 +16,28 @@ function loadData(data) {
         cardsList.appendChild(showData(data[key]));
     }
 }
+
 // Cargar Toda la Data al inicio
 window.addEventListener("load", () => {
     loadData(allData);
 });
+
+// Filtrar Data por Search
+inputSearch.addEventListener('keyup',()=>{
+    let search=inputSearch.value;
+    ghibliNotFound.style.display='none';
+    if(search.length == 0 ){
+        loadData(allData);
+    } else {
+        let dataFilterSearch = filterBySearch(search,allData);
+        if(dataFilterSearch.length == 0){
+            cardsList.innerHTML = '';
+            ghibliNotFound.style.display='block';
+        } else {
+            loadData(dataFilterSearch);
+        }
+    }
+})
 
 // Filtrar Data por Director
 selectDirector.addEventListener("change", () => {

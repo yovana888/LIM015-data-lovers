@@ -6,8 +6,8 @@ export const showData = (data) => {
     let shortDescription = description.split(" ", 30).join(" ");
 
     const templateCard =
-        `<div class="card-contenido">
-          <div class="card-img">
+        `<div class="card-contenido" id="${data.id}">
+          <div class="card-img" >
               <img src="${data.poster}">
               <span class="year-card"> ${data.release_date}</span>
               <span class="score-card"> ${data.rt_score}<i class="fas fa-star"></i></span>
@@ -21,10 +21,24 @@ export const showData = (data) => {
         </div>`;
 
     cardElement.innerHTML = templateCard;
+    
+    cardElement.addEventListener('click',()=>{
+        let id = cardElement.firstChild.id;
+        showMore(id);
+        })
     return cardElement;
 }
+function showMore(id){
+    /* let dataFilter = allData.filter(film => film.director == director);
+    return dataFilter; */
+    console.log(id);
+}
 
-//film es el valor "value" de nuestro objeto allData  gisell=alldata[6]
+export const filterBySearch = (search,allData)=>{
+    let dataFilterSearch=allData.filter(character=> character.title.startsWith(search));
+    return dataFilterSearch;
+}
+
 export const filterByDirector = (director, allData) => {
     let dataFilter = allData.filter(film => film.director == director);
     return dataFilter;

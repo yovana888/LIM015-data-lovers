@@ -3,70 +3,6 @@ body {
     margin: 0; 
     font-family: 'Nunito', sans-serif;
 }
-/* HEADDDDDDDDDDDEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRRRRRRRRR------------------------------------- */
-.logo_imagen {
-    max-width: 100%;
-    height: 50px;
-}
-
-.header {
-    position: relative;
-}
-
-.nav-footer,
-.nav {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    z-index: 10;
-}
-
-.nav-toggle {
-    display: none;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-menu.show {
-    top: 84px;
-}
-
-.nav-menu-list {
-    padding: 0px 50px;
-}
-
-.nav-menu-list:last-child {
-    padding: 20px 0px 0px 50px;
-}
-
-.nav-menu-link {
-    display: block;
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.mode-dark {
-    font-size: 20px;
-    color: #FAB818;
-}
-
-.nav-menu-link:hover {
-    color: #FF3060;
-}
 
 /* INICIOOOOOOOOOOOO------------------------------------- */
 
@@ -158,7 +94,6 @@ body {
     height:650px ;
     overflow-y: scroll;
     margin-bottom: 20px;
-    
 }
 .detail-content-box::-webkit-scrollbar-track{
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -242,7 +177,7 @@ span{
 }
 
 .vehicles{
-    height:210px ;
+    height:200px ;
 }
 .locations{
     height: 600px;
@@ -255,10 +190,6 @@ span{
     width: 300px;
     border-radius: 10px;
 }
-.img-vehicles{
-    width: 200px;
-}
-
 
 .locationsDetails,
 .vehiclesDetails{
@@ -266,8 +197,8 @@ span{
     padding: 0 20px;
     
 }
-/* .second-column-container,
+.second-column-container,
 .first-column-container{
     background: rgb(134, 128, 161);
     margin:5px;
-} */
+}

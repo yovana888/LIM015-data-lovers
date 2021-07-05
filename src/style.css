@@ -429,7 +429,22 @@ body {
 
 /*Fin Codigo para Cards-------------------------------------*/
 
+/*  Inicio de Not found -------------------------------------- */
+.ghibli-notFound{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+.img-not-found{
+    border-radius: 10px;
+}
 
+.notF{
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
 /*  Inicio de footer -------------------------------------- */
 
 .nav-footer {
