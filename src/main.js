@@ -1,38 +1,54 @@
-/* import { example } from './data.js';
-console.log(example, data);
-import data from './data.js'; 
- */
+import { showData, filterByDirector, filterByProducer, filterBySort } from './data.js';
 import dataGhibli from './data/ghibli/ghibli.js';
-const getAlldata = dataGhibli.films;
-const cardsList = document.getElementById("cardsList");
+const allData = dataGhibli.films;
+const cardsList = document.querySelector("#cardsList");
+const selectDirector = document.querySelector("#directors");
+const selectProducer = document.querySelector("#producers");
+const selectSort = document.querySelector("#sort");
+//let inputSearch = document.querySelector("#search");
 
-// Inicio Cargar Data 
-window.addEventListener("load", () => {
-
-    for (let key in getAlldata) {
-
-        const card = document.createElement('div');
-        card.className = "card";
-        let description = getAlldata[key].description;
-        let description_split = description.split(" ", 30);
-        let description_corto = description_split.join(" ");
-        cardsList.appendChild(card).innerHTML =
-
-            `<div class="card-contenido">
-                <div class="card-img">
-                    <img src="${getAlldata[key].poster}">
-                    <span class="year-card"> ${getAlldata[key].release_date}</span>
-                    <span class="score-card"> ${getAlldata[key].rt_score}<i class="fas fa-star"></i></span>
-                </div>
-                <div class="text-card">
-                    <h1 class="title-card">${getAlldata[key].title}</h1>
-                    <p class="text-sumary">${description_corto}...</p>
-                    <p class="text-sumary maker">Director: ${getAlldata[key].director}</p>
-                    <p class="text-sumary maker">Producer: ${getAlldata[key].producer}</p>
-                </div>
-            </div>`;
+// Funcion Cargar Data en Card
+function loadData(data) {
+    cardsList.innerHTML = '';
+    for (let key in data) {
+        cardsList.appendChild(showData(data[key]));
     }
-
+}
+// Cargar Toda la Data al inicio
+window.addEventListener("load", () => {
+    loadData(allData);
 });
 
-// Fin Cargar Data
+// Filtrar Data por Director
+selectDirector.addEventListener("change", () => {
+    let director = selectDirector.value;
+    if (director == 'directors') {
+        loadData(allData);
+    } else {
+        let dataFilterDirector = filterByDirector(director, allData);
+        loadData(dataFilterDirector);
+    }
+});
+
+// Filtrar Data por Productor
+selectProducer.addEventListener("change", () => {
+    let producer = selectProducer.value;
+    if (producer == 'producers') {
+        loadData(allData);
+    } else {
+        let dataFilterProducer = filterByProducer(producer, allData);
+        loadData(dataFilterProducer);
+    }
+});
+
+//Ordenar Data 
+
+selectSort.addEventListener("change", () => {
+    let sort = selectSort.value;
+    if (sort == 'sort') {
+        loadData(allData);
+    } else {
+        let dataSort = filterBySort(sort, allData);
+        loadData(dataSort);
+    }
+});

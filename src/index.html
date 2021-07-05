@@ -10,7 +10,6 @@
         <script src="https://kit.fontawesome.com/e9f8da1aa8.js" crossorigin="anonymous"></script>
         <title>Data Ghibli</title>
     </head>
-
     <body>
         <header class="header">
             <nav class="nav">
@@ -88,7 +87,7 @@
                                 <i class="fas fa-search"></i>
                             </label>
                         </span>
-                        <input type="search" id="search" class="input-data" placeholder="Search Movie">
+                        <input type="search" id="search" class="input-data" placeholder="Search Movie" autocomplete="off" />
                     </div>
                     <span class="icon-filter">
                         <i class="fas fa-filter"></i>
@@ -96,35 +95,35 @@
 
                     <div class="input-data-selector">
                         <div class="input-selector">
-                            <input type="list" list="directors" class="input-data" placeholder="Directors">
-                            <datalist name="directors" id="directors">
-                                <option value="Hayao Miyazaki "></option>
-                                <option value="Isao Takahata "></option>
-                                <option value="Yoshifumi Kondō "></option>
-                                <option value="Hiromasa Yonebayashi "></option>
-                                <option value="Gorō Miyazaki "></option>
-                                <option value="Hiroyuki Morita "></option>
-                            </datalist>
+                            <select name="directors" class="input-data-short" id="directors">
+                                <option value="directors" selected="selected">Filter by directors</option>
+                                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                                <option value="Isao Takahata">Isao Takahata</option>
+                                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                                <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+                                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+                            </select>
                         </div>
                         <div class="input-selector">
-                            <input type="list" list="producers" class="input-data" placeholder="Producers">
-                            <datalist name="producers " id="producers">
-                                <option value="Hayao Miyazaki "></option>
-                                <option value="Isao Takahata "></option>
-                                <option value="Toru Hara "></option>
-                                <option value="Toshio Suzuki "></option>
-                                <option value="Yoshiaki Nishimura "></option>
-                            </datalist>
+                            <select name="producers" class="input-data-short" id="producers">
+                                <option value="producers" selected="selected">Filter by producers</option>
+                                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                                <option value="Isao Takahata">Isao Takahata</option>
+                                <option value="Toru Hara">Toru Hara</option>
+                                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+                            </select>
                         </div>
 
                         <div class="input-selector">
-                            <select name="sort "class="input-data-short" id="sort">
-                                <option value="sort" disabled selected="selected">Filter by Types</option>
-                                <option value="Best rated">Best rated</option>
-                                <option value="Most Recent">Most Recent</option>
-                                <option value="The oldest">The oldest</option>
+                            <select name="sort " class="input-data-short" id="sort">
+                                <option value="sort" selected="selected">Sort by</option>
+                                <option value="BestRated">Best rated</option>
+                                <option value="MostRecent">Most Recent</option>
+                                <option value="TheOldest">The oldest</option>
                             </select>
-                        </div>
+
                     </div>
                 </div>
             </section>
