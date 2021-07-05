@@ -35,7 +35,7 @@ function showMore(id){
 }
 
 export const filterBySearch = (search,allData)=>{
-    let dataFilterSearch=allData.filter(character=> character.title.startsWith(search));
+    let dataFilterSearch=allData.filter(character=> character.title.toUpperCase().startsWith(search.toUpperCase()));
     return dataFilterSearch;
 }
 

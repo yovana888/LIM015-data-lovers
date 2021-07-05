@@ -14,6 +14,7 @@ function loadData(data) {
     cardsList.innerHTML = '';
     for (let key in data) {
         cardsList.appendChild(showData(data[key]));
+        console.log(data[key])
     }
 }
 
@@ -30,6 +31,7 @@ inputSearch.addEventListener('keyup',()=>{
         loadData(allData);
     } else {
         let dataFilterSearch = filterBySearch(search,allData);
+        console.log(dataFilterSearch)
         if(dataFilterSearch.length == 0){
             cardsList.innerHTML = '';
             ghibliNotFound.style.display='block';
