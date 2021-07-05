@@ -1,25 +1,35 @@
 addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.classList.toggle('show');
-        })
-    }
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    })
+    
+    const iconFilter = document.querySelector('.icon-filter');
+    const navFilter = document.querySelector('.input-data-selector');
+    iconFilter.addEventListener('click', () => {
+        navFilter.classList.toggle('show-filter');
+    })
+    
+    const showSection = document.getElementById('show-section')   
+    showSection.addEventListener('click',()=>{
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.remove('show') ;
+    })
+    const openModal=document.getElementById('open-modal');
+    const modalContainer=document.querySelector('.modal-container');
+    openModal.addEventListener('click',()=>{
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.remove('show') ;
+        modalContainer.classList.add('show-modal');
+    })  
+
+    const closeModal=document.querySelector('.close');
+    closeModal.addEventListener('click', () => {
+        modalContainer.classList.remove('show-modal');
+    })
 })
 
-let change=false;
-const btnFilter =document.querySelector('.icon-filter');
-btnFilter.addEventListener('click',() =>{
-    const dataInputs=document.querySelector('.input-data-selector');
-   if (change==false){
-    dataInputs.style.display="block";
-    change=true;
-   }else {
-    dataInputs.style.display="none";
-    change=false;
-   }
-});
 
 /* Inicio Codigo Slider */
 
@@ -54,3 +64,5 @@ function slides() {
 }
 
 /* Fin Codigo Slider */
+/* Inicio  -----------------------------*/
+

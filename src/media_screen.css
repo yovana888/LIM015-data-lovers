@@ -15,7 +15,7 @@
         font-size: 18px;
     }
     
-    /*Para el Silder*/
+    /*Para el Silder-------------------------------------*/
     .contenido-slider>div {
         width: 40%;
         height: 70% !important;
@@ -30,9 +30,8 @@
         flex-direction: center;
     }
 
-    /*Para el buscador*/
+    /*Para el buscador-------------------------------------*/
     .input-data-selector {
-        display: block;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -44,7 +43,7 @@
         font-size: 12px;
     }
 
-    /*Inicio Cards pendiente para iopad pro*/
+    /*Inicio Cards pendiente para iopad pro-------------------------------------*/
     .cards {
         justify-content: center;
         flex-wrap: wrap;
@@ -53,9 +52,6 @@
 }
 
 @media screen and (max-width:778px) {
-    .nav {
-        height: 100px;
-    }
     .nav-toggle {
         display: inline-flex;
     }
@@ -66,21 +62,21 @@
     .nav-menu {
         position: absolute;
         width: 100vw;
-        height: 85vh;
+        height: 100vh;
+        background-color: rgba(16, 14, 29, 1);
         top: -100vh;
-        transition: all .2;
         text-align: center;
         flex-direction: column;
-        background: rgba(31, 25, 53, 0.5);
-        backdrop-filter: blur(20px);
     }
+
     .nav-menu-list {
+        margin-top: 20px;
         padding: 0px;
         line-height: 20px;
     }
     .nav-menu-link {
         font-size: 20px;
-        color: white;
+        color: white; 
     }
     .nav-menu-link:hover {
         background: linear-gradient(95.41deg, #9B3CB7 9.04%, #FF3060 115.84%);
@@ -91,8 +87,13 @@
     .nav-menu-list:last-child {
         padding: 30px;
     }
+    /*  Inicio de modal -------------------------------------
 
-    /*Para el Silder*/
+
+
+    /* Fin Modal------------------------------------ */
+
+    /*Para el Silder -------------------------------------*/
     .contenido-slider {
         flex-direction: column-reverse;
     }
@@ -103,10 +104,12 @@
         display: none;
     }
 
-    /*Para el buscador*/
+    /*Para el buscador-------------------------------------*/
     .container-select {
         position: relative;
+        z-index: 6;
     }
+
     #search {
         width: 200px;
     }
@@ -121,9 +124,10 @@
         right: 8vw;
         display: none;
     }
+
     .input-selector {
         background-color: white;
-        padding: 15px;
+        padding: 18px;
     }
     .filter {
         padding: 0;
@@ -134,7 +138,9 @@
         font-size: 15px;
     }
 
-    /*Inicio Cards*/
+    
+
+    /*Inicio Cards-------------------------------------*/
     .cards {
         justify-content: center;
     }
@@ -164,7 +170,7 @@
     .text-sumary {
         display: none;
     }
-    /*Fin Cards*/
+    /*Fin Cards-------------------------------------*/
 }
 
 
