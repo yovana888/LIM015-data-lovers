@@ -33,6 +33,7 @@ function showMore(id) {
     /* let dataFilter = allData.filter(film => film.director == director);
         return dataFilter; */
     console.log(id);
+    window.open('filmDetail.html');
 }
 
 export const filterBySearch = (search, allData) => {
