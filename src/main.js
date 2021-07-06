@@ -15,6 +15,7 @@ function loadData(data) {
     cardsList.innerHTML = '';
     for (let key in data) {
         cardsList.appendChild(showData(data[key]));
+
     }
 }
 
