@@ -1,12 +1,13 @@
-import { showData,filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
+import { showData, filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
 import dataGhibli from './data/ghibli/ghibli.js';
 const allData = dataGhibli.films;
 const cardsList = document.querySelector("#cardsList");
 const selectDirector = document.querySelector("#directors");
 const selectProducer = document.querySelector("#producers");
 const selectSort = document.querySelector("#sort");
-let inputSearch = document.querySelector("#search");
 const ghibliNotFound = document.querySelector("#ghibli-notFound");
+const inputTypeSearch = document.querySelector("input[type=search]");
+let inputSearch = document.querySelector("#search");
 
 
 // Funcion Cargar Data en Card
@@ -14,7 +15,6 @@ function loadData(data) {
     cardsList.innerHTML = '';
     for (let key in data) {
         cardsList.appendChild(showData(data[key]));
-        console.log(data[key])
     }
 }
 
@@ -24,22 +24,26 @@ window.addEventListener("load", () => {
 });
 
 // Filtrar Data por Search
-inputSearch.addEventListener('keyup',()=>{
-    let search=inputSearch.value;
-    ghibliNotFound.style.display='none';
-    if(search.length == 0 ){
+inputSearch.addEventListener('keyup', () => {
+    let search = inputSearch.value;
+    ghibliNotFound.style.display = 'none';
+    if (search.length == 0) {
         loadData(allData);
     } else {
-        let dataFilterSearch = filterBySearch(search,allData);
-        console.log(dataFilterSearch)
-        if(dataFilterSearch.length == 0){
+        let dataFilterSearch = filterBySearch(search, allData);
+        if (dataFilterSearch.length == 0) {
             cardsList.innerHTML = '';
-            ghibliNotFound.style.display='block';
+            ghibliNotFound.style.display = 'block';
         } else {
             loadData(dataFilterSearch);
         }
     }
-})
+});
+
+// Volver a cargar toda la Data cuando haga click en la x interna de un input de tipo search
+inputTypeSearch.addEventListener('search', () => {
+    loadData(allData);
+});
 
 // Filtrar Data por Director
 selectDirector.addEventListener("change", () => {

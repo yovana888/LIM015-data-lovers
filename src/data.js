@@ -21,21 +21,23 @@ export const showData = (data) => {
         </div>`;
 
     cardElement.innerHTML = templateCard;
-    
-    cardElement.addEventListener('click',()=>{
+
+    cardElement.addEventListener('click', () => {
         let id = cardElement.firstChild.id;
         showMore(id);
-        })
+    })
     return cardElement;
 }
-function showMore(id){
+
+function showMore(id) {
     /* let dataFilter = allData.filter(film => film.director == director);
-    return dataFilter; */
+        return dataFilter; */
     console.log(id);
 }
 
-export const filterBySearch = (search,allData)=>{
-    let dataFilterSearch=allData.filter(character=> character.title.toUpperCase().startsWith(search.toUpperCase()));
+export const filterBySearch = (search, allData) => {
+    let searchConverted = search.toLowerCase();
+    let dataFilterSearch = allData.filter(characters => characters.title.toLowerCase().includes(searchConverted));
     return dataFilterSearch;
 }
 
