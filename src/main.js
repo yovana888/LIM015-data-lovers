@@ -44,6 +44,7 @@ inputSearch.addEventListener('keyup', () => {
 // Volver a cargar toda la Data cuando haga click en la x interna de un input de tipo search
 inputTypeSearch.addEventListener('search', () => {
     loadData(allData);
+    ghibliNotFound.style.display = 'none';
 });
 
 // Filtrar Data por Director
