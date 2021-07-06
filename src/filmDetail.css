@@ -20,7 +20,7 @@ body {
     gap:40px;
     background:  #E5E5E5;
 } 
-/*---------------------Primera columna ---------------------------------*/
+/*---------------------Portada ---------------------------------*/
 
 .first-column-container{  
     display: flex;
@@ -39,7 +39,7 @@ body {
     border-radius: 10px;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
 } 
-/*  ---------------------Segunda columna ---------------------------------*/
+/*  ---------------------Título---------------------------------*/
 .second-column-container{ 
     display: flex;
     flex-direction: column;
@@ -56,6 +56,7 @@ body {
     font-weight: 'bold';
     font-size: 36px;
 }
+
 .year-film{
     position: relative;
     width: 80px;
@@ -68,6 +69,22 @@ body {
     border-radius: 8px;
 }
 
+.score{
+    position:relative;
+    top:-50px;
+    left:250px;
+    display: flex;
+    justify-content: center;
+} 
+.score-film{
+    font-size: 30px;
+    font-weight: 'bold';
+}
+.score > .fa-star{
+    font-size: 20px;
+    margin-top: 6px;
+}
+/*  ---------------------Contenedores---------------------------------*/
 .container-box{
     background-color: white;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
@@ -89,15 +106,28 @@ body {
     background: #FF3060;
     border-radius: 20px;
 }
-
+.characters{
+    max-height:650px ;
+}
+.vehicles{
+    max-height:400px ;
+}
+.locations{
+    max-height: 680px;
+}
+/*  --------------------- scroll---------------------------------*/
 .detail-content-box{
-    height:650px ;
     overflow-y: scroll;
     margin-bottom: 20px;
+   /*  display: grid;
+    grid-template-columns: 380px;
+    
+    justify-content: center */;
 }
+
 .detail-content-box::-webkit-scrollbar-track{
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
+   /*  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background-color: #ffffff;
 }
 
 .detail-content-box::-webkit-scrollbar{
@@ -108,15 +138,23 @@ body {
 .detail-content-box::-webkit-scrollbar-thumb{
     background-color: #FF3060;
 }
+/*  --------------------- detalles de contenedores---------------------------------*/
 .locations-detail-box,
-.vehicles-detail-box,
-.characters-detail-box{
+.vehicles-detail-box{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.characters-detail-box{
+    display: grid;
+    grid-template-columns: auto 300px;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 20px 0;
 }
+
 .details-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -125,8 +163,11 @@ body {
     margin: 0;
     font-size: 15px
 }
-span{
-    color: black;
+.span-name{
+    color: rgb(90, 90, 90);
+}
+.span-black{
+    color:black;
 }
 .text{
     color: rgb(90, 90, 90);
@@ -139,10 +180,12 @@ span{
     font-size: 20px; 
     color: #0095F6;
 }
-.fas{
+.fa-crown,
+.fa-play-circle{
     font-size: 25px;
     margin-right: 10px;
 }
+.fa-star,
 .fa-crown{
     color:#FAB818;
 }
@@ -153,6 +196,7 @@ span{
     text-align: center;
 }
 .filmaker{
+    color: black;
     font-size: 20px;
 }
 
@@ -171,34 +215,28 @@ span{
     position:absolute;
     left: -100%;
     right: -100%;
-    top: -60%;
+    top: -100%;
     bottom: -100%;
     margin: auto;
 }
 
-.vehicles{
-    height:200px ;
-}
-.locations{
-    height: 600px;
+.img-vehicles,
+.img-locations{
+    height:220px ;
+    width: 300px ; 
+    border-radius: 10px;
 }
 .description{
     grid-column: 1/3;
 }
-.img-vehicles,
-.img-locations{
-    width: 300px;
-    border-radius: 10px;
-}
-
 .locationsDetails,
 .vehiclesDetails{
     gap:10px;
     padding: 0 20px;
     
 }
-.second-column-container,
+/* .second-column-container,
 .first-column-container{
     background: rgb(134, 128, 161);
     margin:5px;
-}
+} */
