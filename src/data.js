@@ -57,6 +57,7 @@ function showMore(id) {
 
 
     const dataLocation = dataFilm[0].locations;
+    containerLocation.innerHTML = "";
     for (let key in dataLocation) {
         const locationElement = document.createElement('div');
         locationElement.className = 'locations-detail-box';
@@ -76,6 +77,7 @@ function showMore(id) {
     }   
 
     const dataCharacters = dataFilm[0].people;
+    containerCharacter.innerHTML = "";
     for(let key in dataCharacters){
       const charactersElement = document.createElement('div');
       charactersElement.className='characters-detail-box';
@@ -96,6 +98,7 @@ function showMore(id) {
     }
 
     const dataVehicles = dataFilm[0].vehicles;
+    containerVehicles.innerHTML = "";
     for(let key in dataVehicles){
       const vehiclesElement = document.createElement('div');
       vehiclesElement.className='vehicles-detail-box';
