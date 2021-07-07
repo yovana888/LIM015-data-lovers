@@ -84,6 +84,8 @@ selectSort.addEventListener("change", () => {
     }
 });
 
+//Ocultar el Main de Detalle de las Peliculas
+
 home.addEventListener("click", () => {
     mainFilms.style.display = 'none';
     mainCards.style.display = 'block';
