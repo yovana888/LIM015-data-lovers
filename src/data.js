@@ -9,9 +9,9 @@ const producerFilm = document.querySelector("#producer-film");
 const synopsisFilm = document.querySelector("#synopsis-film");
 const yearFilm = document.querySelector(".year-film");
 const scoreFilm = document.querySelector(".score-film");
-const containerLocation=document.querySelector("#container-location");
-const containerCharacter=document.querySelector("#container-characters");
-const containerVehicles=document.querySelector("#container-vehicles");
+const containerLocation = document.querySelector("#container-location");
+const containerCharacter = document.querySelector("#container-characters");
+const containerVehicles = document.querySelector("#container-vehicles");
 
 
 export const showData = (data) => {
@@ -45,34 +45,32 @@ export const showData = (data) => {
 }
 
 function showMore(id) {
-    let dataFilm = allData.filter(film => film.id == id);
-    imgFilm.src=dataFilm[0].poster; 
-    titleFilm.innerHTML=dataFilm[0].title;
-    yearFilm.innerHTML=dataFilm[0].release_date;
-    scoreFilm.innerHTML=dataFilm[0].rt_score;
-    directorFilm.innerHTML=dataFilm[0].director;
-    producerFilm.innerHTML=dataFilm[0].producer;
-    synopsisFilm.innerHTML=dataFilm[0].description;
 
-    
+    let dataFilm = allData.filter(film => film.id == id);
+    imgFilm.src = dataFilm[0].poster;
+    titleFilm.innerHTML = dataFilm[0].title;
+    yearFilm.innerHTML = dataFilm[0].release_date;
+    scoreFilm.innerHTML = dataFilm[0].rt_score;
+    directorFilm.innerHTML = dataFilm[0].director;
+    producerFilm.innerHTML = dataFilm[0].producer;
+    synopsisFilm.innerHTML = dataFilm[0].description;
+
+
     const dataLocation = dataFilm[0].locations;
-    /* console.log(dataLocation); */
-    for(let key in dataLocation){
-      const locationElement = document.createElement('div');
-      locationElement.className='locations-detail-box';
-      let templateLocation=
-      `<div class="img-locations-box">
-           ${dataLocation[key].img=="" ? 
-            `<img src="./img/not-found.jpg" alt="" class="img-locations">` 
-       : `<img src="${dataLocation[key].img}" alt="" class="img-locations">`}    
-       </div>
-       <div class="details-container locationsDetails">
-            <p class="text-name">${dataLocation[key].name}</p>
-            <p class="text"><span class="span-black">Climate:</span>${dataLocation[key].climate}</p>
-            <p class="text"><span class="span-black">Terrain:</span>${dataLocation[key].terrain}</p>
-            <p class="text"><span class="span-black">Surface water:</span>${dataLocation[key].surface_water}</p>
-            <p class="text"><span class="span-black">Residents:</span> ${dataLocation[key].residents}</p>
-        </div>`;
+    for (let key in dataLocation) {
+        const locationElement = document.createElement('div');
+        locationElement.className = 'locations-detail-box';
+        let templateLocation =
+            `<div class="img-locations-box">
+                ${dataLocation[key].img=="" ? `<img src="./img/not-found.jpg" alt="" class="img-locations">` : `<img src="${dataLocation[key].img}" alt="" class="img-locations">`}    
+            </div>
+            <div class="details-container locationsDetails">
+                <p class="text-name">${dataLocation[key].name}</p>
+                <p class="text"><span class="span-black">Climate:</span>${dataLocation[key].climate}</p>
+                <p class="text"><span class="span-black">Terrain:</span>${dataLocation[key].terrain}</p>
+                <p class="text"><span class="span-black">Surface water:</span>${dataLocation[key].surface_water}</p>
+                <p class="text"><span class="span-black">Residents:</span> ${dataLocation[key].residents}</p>
+            </div>`;
         locationElement.innerHTML=templateLocation;
         containerLocation.appendChild(locationElement);
     }   
@@ -82,10 +80,8 @@ function showMore(id) {
       const charactersElement = document.createElement('div');
       charactersElement.className='characters-detail-box';
       let templateCharacter=
-      ` <div class="img-character-box">
-            ${dataCharacters[key].img=="" ? 
-            `<img src="./img/not-found.jpg" alt="" class="img-character">` 
-            : `<img src="${dataCharacters[key].img}" alt="" class="img-character">`}
+        `<div class="img-character-box">
+            ${dataCharacters[key].img=="" ? `<img src="./img/not-found.jpg" alt="" class="img-character">` : `<img src="${dataCharacters[key].img}" alt="" class="img-character">`}
         </div>
         <div class="details-container">
             <p class="text-name">${dataCharacters[key].name}</p>
@@ -117,8 +113,8 @@ function showMore(id) {
       vehiclesElement.innerHTML= templateVehicles;
       containerVehicles.appendChild(vehiclesElement);
     }
-    window.scroll(0,0);
 
+    window.scroll(0,0);
     mainCards.style.display='none';
     mainFilms.style.display='block';
 }

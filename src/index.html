@@ -18,12 +18,12 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <a href="#"><img src="img/data-ghibli.png" alt="Data-Ghibli" class="logo_imagen"></a>
+                <a href="#" class="home"><img src="img/data-ghibli.png" alt="Data-Ghibli" class="logo_imagen"></a>
             </div>
             <span class="nav-toggle"><i class="fas fa-bars"></i></span>
             <ul class="nav-menu">
                 <li class="nav-menu-list">
-                    <a href="#section-filter" class="nav-menu-link" id="show-section">Movies</a>
+                    <a href="#section-filter" class="nav-menu-link home" id="show-section">Movies</a>
                 </li>
                 <li class="nav-menu-list">
                     <a href="#" class="nav-menu-link" id="open-modal">Statistics</a>
@@ -33,17 +33,6 @@
         </nav>
     </header>
     <main id="main-cards">
-        <section class="modal-container">
-            <div class="modal ">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <img src="img/totoro.png" alt="totoro" class="img-rfs">
-                <div class="modal-text">
-                    <h2>MODAL PODEROSO</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam expedita, vero aliquam accusantium placeat fugiat exercitationem quibusdam. Nesciunt, similique modi nemo, repellat nobis alias fugit ut libero beatae architecto atque.</p>
-                </div>
-            </div>
-        </section>
-
         <section>
             <div class="contenedor">
                 <div class="slider-contenedor">
@@ -142,54 +131,55 @@
             <img src="https://media1.tenor.com/images/b35f76ffcebcfaa671efe422dae5dd1f/tenor.gif?itemid=14835860" alt="notFound-img" class="img-not-found">
         </div>
     </main>
+
     <main id="main-film" style="display: none;">
         <section class="background-image">
-          <div class=""></div>
+            <div class=""></div>
         </section>
-        <section class="container-columns" >
+        <section class="container-columns">
             <article class="first-column-container">
-                <div class="container-img" >
+                <div class="container-img">
                     <img src="https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg" alt="Imagen" class="img-film" id="img-film">
                 </div>
                 <div class="container-box film">
-                    <p class="text filmaker" >
+                    <p class="text filmaker">
                         <i class="fas fa-crown"></i>Director: <span class="span-name" id="director-film"> Hayao Miyazaki</span>
                     </p>
                 </div>
                 <div class="container-box film">
-                    <p class="text filmaker" >
+                    <p class="text filmaker">
                         <i class="fas fa-play-circle"></i>Producer: <span class="span-name" id="producer-film"> Hayao Miyazaki</span>
                     </p>
                 </div>
-                <section class="container-box" >
+                <section class="container-box">
                     <h2 class="title-box">Locations</h2>
                     <div class="detail-content-box locations" id="container-location">
 
-                          <!------------- Locations ------------->
+                        <!------------- Locations ------------->
 
                     </div>
                 </section>
             </article>
+
             <article class="second-column-container">
                 <div class="container-title">
-                    <h1 class="title" id="title-film">My Neighbor Totoro</h1>
-                    <p class="year-film"> 1988</p>
+                    <h1 class="title" id="title-film"></h1>
+                    <p class="year-film"></p>
                     <p class="score">
-                        <span class="score-film">93</span>
+                        <span class="score-film"></span>
                         <i class="fas fa-star"></i>
                     </p>
-                    
+
                 </div>
                 <section class="container-box">
-                    <h2 class="title-box" >Synopsis</h2>
-                    <p class="text" id="synopsis-film">Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home,
-                        the older sister seeks help from the spirits to find her.</p>
+                    <h2 class="title-box">Synopsis</h2>
+                    <p class="text" id="synopsis-film"></p>
                 </section>
                 <section class="container-box">
                     <h2 class="title-box ">Characters</h2>
                     <div class="detail-content-box characters" id="container-characters">
 
-                          <!------------- Characters ------------->
+                        <!------------- Characters ------------->
                     </div>
                 </section>
 
@@ -197,13 +187,25 @@
                     <h2 class="title-box">Vehicles</h2>
                     <div class="detail-content-box vehicles" id="container-vehicles">
 
-                          <!------------- Vehicles ------------->
+                        <!------------- Vehicles ------------->
                     </div>
                 </section>
             </article>
         </section>
     </main>
     <br><br>
+
+    <section class="modal-container">
+        <div class="modal ">
+            <span class="close"><i class="fas fa-times"></i></span>
+            <img src="img/totoro.png" alt="totoro" class="img-rfs">
+            <div class="modal-text">
+                <h2>MODAL PODEROSO</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam expedita, vero aliquam accusantium placeat fugiat exercitationem quibusdam. Nesciunt, similique modi nemo, repellat nobis alias fugit ut libero beatae architecto atque.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <nav class="nav-footer">
             <ul class="nav-menu-footer">

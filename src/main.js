@@ -7,6 +7,9 @@ const selectProducer = document.querySelector("#producers");
 const selectSort = document.querySelector("#sort");
 const ghibliNotFound = document.querySelector("#ghibli-notFound");
 const inputTypeSearch = document.querySelector("input[type=search]");
+const mainCards = document.querySelector("#main-cards");
+const mainFilms = document.querySelector("#main-film");
+const home = document.querySelector(".home");
 let inputSearch = document.querySelector("#search");
 
 
@@ -79,4 +82,9 @@ selectSort.addEventListener("change", () => {
         let dataSort = filterBySort(sort, allData);
         loadData(dataSort);
     }
+});
+
+home.addEventListener("click", () => {
+    mainFilms.style.display = 'none';
+    mainCards.style.display = 'block';
 });
