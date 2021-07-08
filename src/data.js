@@ -61,6 +61,7 @@ function showMore(id) {
     for (let key in dataLocation) {
         const locationElement = document.createElement('div');
         locationElement.className = 'locations-detail-box';
+        let residents = dataLocation[key].residents;
         let templateLocation =
             `<div class="img-locations-box">
                 ${dataLocation[key].img=="" ? `<img src="./img/not-found.jpg" alt="" class="img-locations">` : `<img src="${dataLocation[key].img}" alt="" class="img-locations">`}    
@@ -70,7 +71,7 @@ function showMore(id) {
                 <p class="text"><span class="span-black">Climate:</span>${dataLocation[key].climate}</p>
                 <p class="text"><span class="span-black">Terrain:</span>${dataLocation[key].terrain}</p>
                 <p class="text"><span class="span-black">Surface water:</span>${dataLocation[key].surface_water}</p>
-                <p class="text"><span class="span-black">Residents:</span> ${dataLocation[key].residents}</p>
+                <p class="text"><span class="span-black">Residents:</span> ${residents.map(i => i.name).join(",")}</p>
             </div>`;
         locationElement.innerHTML=templateLocation;
         containerLocation.appendChild(locationElement);
@@ -102,6 +103,7 @@ function showMore(id) {
     for(let key in dataVehicles){
       const vehiclesElement = document.createElement('div');
       vehiclesElement.className='vehicles-detail-box';
+      let pilots = dataVehicles[key].pilot;
       let templateVehicles =
       `<div class="img-vehicles-box">
           <img src="${dataVehicles[key].img}" alt="" class="img-vehicles">
@@ -111,7 +113,7 @@ function showMore(id) {
           <p class="text description"><span class="span-black">Description:</span>${dataVehicles[key].description}</p>
           <p class="text"><span class="span-black">Vehicle class:</span>${dataVehicles[key].vehicle_class}</p>
           <p class="text"><span class="span-black">Length:</span>${dataVehicles[key].length}</p>
-          <p class="text"><span class="span-black">Pilot:</span>${dataVehicles[key].pilot}</p>
+          <p class="text"><span class="span-black">Pilot:</span>${pilots.name}</p>
       </div>`
       vehiclesElement.innerHTML= templateVehicles;
       containerVehicles.appendChild(vehiclesElement);

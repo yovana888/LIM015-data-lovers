@@ -50,6 +50,18 @@
         font-size: 13px;
     }
     /*Inicio Cards pendiente para iopad pro-------------------------------------*/
+
+    .container-columns {
+        grid-template-columns: 40vw 50vw;
+    }
+    .title-box{
+        font-size: 15.5px;
+    }
+    .locationsDetails,
+    .vehiclesDetails{
+        padding: 0 15px;
+    
+    }
 }
 
 @media screen and (max-width:778px) {
@@ -88,12 +100,6 @@
     .nav-menu-list:last-child {
         padding: 30px;
     }
-    /*  Inicio de modal -------------------------------------
-
-
-
-    /* Fin Modal------------------------------------ */
-
     /*Para el Silder -------------------------------------*/
     .contenido-slider {
         flex-direction: column-reverse;
@@ -172,6 +178,12 @@
         display: none;
     }
     /*Fin Cards-------------------------------------*/
+    .container-columns {
+        grid-template-columns: 85vw;
+
+    
+    }
+   
 }
 
 

@@ -13,12 +13,12 @@ const home = document.querySelector(".home");
 let inputSearch = document.querySelector("#search");
 
 
+
 // Funcion Cargar Data en Card
 function loadData(data) {
     cardsList.innerHTML = '';
     for (let key in data) {
         cardsList.appendChild(showData(data[key]));
-
     }
 }
 
