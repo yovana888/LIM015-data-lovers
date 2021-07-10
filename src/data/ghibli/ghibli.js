@@ -147,9 +147,9 @@ export default {
                     "climate": "TODO",
                     "terrain": "TODO",
                     "surface_water": "40",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "26361a2c-32c6-4bd5-ae9c-8e40e17ae28d",
@@ -158,9 +158,9 @@ export default {
                     "climate": "Dry",
                     "terrain": "Hill",
                     "surface_water": "0",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "0fafa7a3-64c1-43fe-881b-ecb605c01e09",
@@ -169,9 +169,9 @@ export default {
                     "climate": "Continental",
                     "terrain": "City",
                     "surface_water": "40",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "0132f7f6-fd52-4ac3-b5df-c96b609f77b6",
@@ -180,9 +180,9 @@ export default {
                     "climate": "Continental",
                     "terrain": "Hill",
                     "surface_water": "30",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 }
             ],
             "vehicles": [{
@@ -315,9 +315,9 @@ export default {
                     "climate": "Mild",
                     "terrain": "River",
                     "surface_water": "40",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "6fc21b76-78fb-4451-98f7-857e32a23e85",
@@ -326,9 +326,9 @@ export default {
                     "climate": "Continental",
                     "terrain": "River",
                     "surface_water": "60",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "ee897b2a-405e-42b9-bff4-8b51b0f03cab",
@@ -337,9 +337,9 @@ export default {
                     "climate": "Mild",
                     "terrain": "River",
                     "surface_water": "60",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 }
             ],
             "vehicles": []
@@ -421,9 +421,9 @@ export default {
                     "climate": "TODO",
                     "terrain": "TODO",
                     "surface_water": "40",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "c57fb2cb-ea85-4d73-8808-cf5dcd28c22e",
@@ -432,9 +432,9 @@ export default {
                     "climate": "Mild",
                     "terrain": "Hill",
                     "surface_water": "50",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "62346d33-caa0-4c17-8016-0aca56f3066b",
@@ -443,9 +443,9 @@ export default {
                     "climate": "Mild",
                     "terrain": "City",
                     "surface_water": "30",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "64a996aa-481e-4627-9624-ab23f59a05a9",
@@ -1110,9 +1110,9 @@ export default {
                     "climate": "Tropical",
                     "terrain": "Forest",
                     "surface_water": "60",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 }
             ],
             "vehicles": []
@@ -1307,9 +1307,9 @@ export default {
                     "climate": "TODO",
                     "terrain": "TODO",
                     "surface_water": "40",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "37d13a96-a03a-451d-8871-80be0495486e",
@@ -1318,9 +1318,9 @@ export default {
                     "climate": "Continental",
                     "terrain": "River",
                     "surface_water": "70",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 }
             ],
             "vehicles": []
@@ -1806,9 +1806,9 @@ export default {
                     "climate": "Wet",
                     "terrain": "Ocean",
                     "surface_water": "100",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "469b14bd-5565-4436-bbed-c2036f42cc99",
@@ -1817,9 +1817,9 @@ export default {
                     "climate": "Mild",
                     "terrain": "Ocean",
                     "surface_water": "50",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 }
             ],
             "vehicles": [{
@@ -1932,9 +1932,9 @@ export default {
                     "climate": "Warm",
                     "terrain": "Forest",
                     "surface_water": "10",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 },
                 {
                     "id": "f2148ab5-f272-4057-b05a-1321e35227b4",
@@ -1943,9 +1943,9 @@ export default {
                     "climate": "Warm",
                     "terrain": "Under the floorboards",
                     "surface_water": "10",
-                    "residents": [
-                        "TODO"
-                    ]
+                    "residents": [{
+                        name : "TODO"
+                    }]
                 }
             ],
             "vehicles": []

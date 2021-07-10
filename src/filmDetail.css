@@ -14,43 +14,39 @@ body {
 }
 .container-columns {
     display: grid;
-    grid-template-columns: 30vw 42vw;
+    grid-template-columns: 32vw 42vw;
     grid-template-rows: 1fr  ;
     justify-content: center;
     overflow: hidden;
     gap:3vw;
     background:  #E5E5E5;
     padding-bottom: 20px;
-    
 } 
+
 /*---------------------Portada ---------------------------------*/
 
-.first-column-container{  
+.first-column-container,
+.second-column-container{  
     display: flex;
     flex-direction: column ; 
     gap:25px;
 } 
 .container-img{
     position: relative;
-    margin: 150px auto 0;
+    margin: 170px auto 0;
 } 
 .img-film{     
     width: 28vw;
-    min-width:250px ;
+    min-width:280px ;
     border: 10px solid #FFFFFF;
     border-radius: 10px;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
 } 
 /*  ---------------------Título---------------------------------*/
-.second-column-container{ 
-    display: flex;
-    flex-direction: column;
-    gap:25px;
-}
+
 .container-title{
     position: relative;
     margin-top: 150px;
-    margin-bottom: 20px;
     color: white;
 }
 .title{
@@ -66,7 +62,7 @@ body {
 } 
 .year-film{
     width: 80px;
-    height: 25px;
+    height: 23px;
     margin: 0;
     font-size: 20px;
     color: #fff;
@@ -78,9 +74,9 @@ body {
     font-size: 30px;
     font-weight: 'bold';
 }
+
 .score-box > .fa-star{
     font-size: 20px;
-    margin-top: 6px;
 }
 /*  ---------------------Contenedores---------------------------------*/
 .container-box{
@@ -116,7 +112,6 @@ body {
 /*  --------------------- scroll---------------------------------*/
 .detail-content-box{
     overflow-y: scroll;
-    
 }
 
 .detail-content-box::-webkit-scrollbar-track{
@@ -134,6 +129,7 @@ body {
     background-color: #FF3060;
 }
 /*  --------------------- detalles de contenedores---------------------------------*/
+
 .locations-detail-box,
 .vehicles-detail-box{
     display: flex;
@@ -153,6 +149,7 @@ body {
     grid-template-columns: 150px 150px;
     gap:10px;
     overflow-x: hidden;
+
 }
 .locationsDetails,
 .vehiclesDetails{

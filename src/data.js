@@ -7,6 +7,7 @@ const titleFilm = document.querySelector("#title-film");
 const directorFilm = document.querySelector("#director-film");
 const producerFilm = document.querySelector("#producer-film");
 const synopsisFilm = document.querySelector("#synopsis-film");
+
 const yearFilm = document.querySelector(".year-film");
 const scoreFilm = document.querySelector(".score-film");
 const containerLocation = document.querySelector("#container-location");
@@ -54,6 +55,7 @@ function showMore(id) {
     directorFilm.innerHTML = dataFilm[0].director;
     producerFilm.innerHTML = dataFilm[0].producer;
     synopsisFilm.innerHTML = dataFilm[0].description;
+    
 
 
     const dataLocation = dataFilm[0].locations;
