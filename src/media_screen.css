@@ -1,5 +1,5 @@
 /*Inicio de medias--------------------------------------*/
-
+    
 @media screen and (max-width:1024px) {
     .logo_imagen {
         max-width: 100%;
@@ -41,7 +41,9 @@
     .input-data,
     .input-data-short {
         font-size: 12px;
+        width: 130px;
     }
+    
 
     /*Inicio Cards pendiente para iopad pro-------------------------------------*/
     .cards {
@@ -64,6 +66,7 @@
     .vehiclesDetails{
         padding: 0 15px;
     }
+    
     
 }
 
@@ -139,6 +142,7 @@
         background-color: white;
         padding: 18px;
     }
+    
     .filter {
         padding: 0;
     }
@@ -190,6 +194,15 @@
     .container-img{
         margin: 20px auto 0;
     } 
+    #container-synopsis-show,
+    #container-title-show{
+        display: block;
+    }
+    #container-title,
+    #container-synopsis{
+        display:none;
+    }
+    
 }
 
 

@@ -49,6 +49,7 @@ body {
     margin-top: 150px;
     color: white;
 }
+.title-new,
 .title{
     margin:15px 0;
     font-weight: 'bold';
@@ -60,6 +61,7 @@ body {
     justify-content: space-between;
     align-items: center;
 } 
+.year-film-new,
 .year-film{
     width: 80px;
     height: 23px;
@@ -70,6 +72,7 @@ body {
     background-color: #1BC47D;
     border-radius: 8px;
 }
+.score-film-new,
 .score-film{
     font-size: 30px;
     font-weight: 'bold';
@@ -83,7 +86,7 @@ body {
     background-color: white;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
     border-radius: 8px; 
-    padding: 10px 25px; 
+    padding: 10px 25px 25px 20px; 
 }
 
 .title-box{
@@ -202,6 +205,7 @@ body {
 }
 .film{
     text-align: center;
+    padding-bottom:10px;
 }
 
 .img-character-box{
@@ -221,6 +225,7 @@ body {
     bottom: -100%;
     margin: auto;
 }
+
 .img-locations-box,
 .img-vehicles-box{
     margin-left: auto;
@@ -229,14 +234,15 @@ body {
 .img-vehicles,
 .img-locations{
     border-radius: 10px;
-    
     width: 22vw;
-
     min-width: 250px;
 }
 
-/* .second-column-container,
-.first-column-container{
-    background: rgb(134, 128, 161);
-    margin:5px;
-} */
+#container-synopsis-show,
+    #container-title-show{
+        display: none;
+    }
+    #container-title,
+    #container-synopsis{
+        display:block;
+    }

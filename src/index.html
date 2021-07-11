@@ -18,7 +18,7 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <a href="#" class="home"><img src="img/data-ghibli.png" alt="Data-Ghibli" class="logo_imagen"></a>
+                <a href="#" id="home-logo" class="home"><img src="img/data-ghibli.png" alt="Data-Ghibli" class="logo_imagen"></a>
             </div>
             <span class="nav-toggle"><i class="fas fa-bars"></i></span>
             <ul class="nav-menu">
@@ -141,16 +141,18 @@
 
             <article class="first-column-container">
                 <!------------- Título para el media ------------->
-                <!-- <div class="container-title">
-                    <h1 class="title" id="title-film"></h1>
+
+                <div class="container-title" id="container-title-show">
+                    <h1 class="title-new" ></h1>
                     <div class="year-score">
-                        <p class="year-film"></p>
+                        <p class="year-film-new"></p>
                         <div class="score-box">
-                            <span class="score-film"></span>
+                            <span class="score-film-new"></span>
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
                 <div class="container-img">
                     <img src="https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg" alt="Imagen" class="img-film" id="img-film">
                 </div>
@@ -161,19 +163,19 @@
                     </p>
                 </div>
 
-                <div class="container-box film">
+                <div class="container-box film" >
                     <p class="text filmaker">
                         <i class="fas fa-play-circle"></i>Producer: <span class="span-name"id="producer-film">Hayao Miyazaki</span>
                     </p>
                 </div>
                 <!------------- Synopsis para el media ------------->
-                <!--  LE PUSE OTRO ID  
-                <section class="container-box">
+                 <!-- LE PUSE OTRO ID   -->
+                <section class="container-box" id="container-synopsis-show">
                     <h2 class="title-box">Synopsis</h2>
-                    <p class="text" id="synopsis-film-new"></p>
-                </section> -->
+                    <p class="text" id="synopsis-film"></p>
+                </section>
                 
-                <section class="container-box locationsOrder">
+                <section class="container-box">
                     <h2 class="title-box">Locations</h2>
                     <div class="detail-content-box locations" id="container-location">
 
@@ -184,8 +186,8 @@
             </article>
 
             <article class="second-column-container">
-                <div class="container-title">
-                    <h1 class="title" id="title-film"></h1>
+                <div class="container-title" id="container-title">
+                    <h1 class="title" ></h1>
                     <div class="year-score">
                         <p class="year-film"></p>
                         <div class="score-box">
@@ -195,9 +197,9 @@
                     </div>
                 </div>
 
-                <section class="container-box ">
+                <section class="container-box" id="container-synopsis">
                     <h2 class="title-box">Synopsis</h2>
-                    <p class="text" id="synopsis-film"></p>
+                    <p class="text" id="synopsis-film-new"></p>
                 </section>
 
                 <section class="container-box">

@@ -9,9 +9,9 @@ const ghibliNotFound = document.querySelector("#ghibli-notFound");
 const inputTypeSearch = document.querySelector("input[type=search]");
 const mainCards = document.querySelector("#main-cards");
 const mainFilms = document.querySelector("#main-film");
-const home = document.querySelector(".home");
+const homeLogo = document.querySelector("#home-logo");
+const homeMovies=document.querySelector("#show-section");
 let inputSearch = document.querySelector("#search");
-
 
 
 // Funcion Cargar Data en Card
@@ -86,7 +86,11 @@ selectSort.addEventListener("change", () => {
 
 //Ocultar el Main de Detalle de las Peliculas
 
-home.addEventListener("click", () => {
+homeLogo.addEventListener("click", () => {
+    mainFilms.style.display = 'none';
+    mainCards.style.display = 'block';
+});
+homeMovies.addEventListener("click", () => {
     mainFilms.style.display = 'none';
     mainCards.style.display = 'block';
 });

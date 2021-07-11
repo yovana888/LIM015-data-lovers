@@ -285,7 +285,6 @@ body {
 
 .input-data,
 .input-data-short {
-    width: 13vw;
     font-size: 15px;
     border-width: 0px 0px 3px 0px;
     border-color: #FF3060;
@@ -294,7 +293,7 @@ body {
 }
 
 .input-data-short {
-    width: 9vw;
+    width: 150px;
 }
 
 .icon-filter {
