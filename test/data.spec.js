@@ -1,23 +1,29 @@
-import { example, anotherExample } from '../src/data.js';
+import {filterBySearch} from '../src/data.js';
+/* -------- Filtrado por search -------*/
+describe('filterBySearch', () => {
+  const search = "totoro";
+  const ghibliData = {"films": [
+    {
+      "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+      "title": "Castle in the Sky",
+    },
+    {
+      "id": "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
+      "title": "My Neighbor Totoro",
+    }
+  ] };
+  const dataFilterSearch = [
+    {"id": "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
+    "title": "My Neighbor Totoro"}
+  ];
 
-
-describe('example', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterBySearch).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('decería retornar la información de My Neighbor Totoro', () => {
+    expect(filterBySearch(search,ghibliData)).toEqual(dataFilterSearch);
   });
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
