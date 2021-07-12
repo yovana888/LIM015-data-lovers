@@ -96,7 +96,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 60%;
     min-width: 330px;
     height: 70%;
@@ -104,15 +104,9 @@ body {
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-.img-rfs,
 .modal-text{
-    padding: 3vh;
+    padding-left: 20px;
 }
-.img-rfs{
-    height: 50px;
-   
-}
-
 .close{
     position: absolute;
     color:#FF3060;

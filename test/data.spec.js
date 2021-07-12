@@ -7,7 +7,7 @@ describe('filterBySearch', () => {
 
   it("Debería retornar `My Neighbor Totoro`", () => {
     const dataPrueba = [{ title: "Castle in the Sky" }, { title: "My Neighbor Totoro" }];
-    expect(filterBySearch(`totoro`, dataPrueba)).toStrictEqual([
+    expect(filterBySearch(`totoro`, dataPrueba)).toEqual([
       { title: "My Neighbor Totoro"}
     ]);
   });

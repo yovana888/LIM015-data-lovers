@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import {filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
 import {showData,allData} from './template.js';
 
@@ -93,4 +95,36 @@ homeLogo.addEventListener("click", () => {
 homeMovies.addEventListener("click", () => {
     mainFilms.style.display = 'none';
     mainCards.style.display = 'block';
+});
+
+
+/*------------ Gráficos en el modal con ChartData.js----------- */
+var speedCanvas = document.getElementById("speedChart");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var speedData = {
+  labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+  datasets: [{
+    label: "Car Speed (mph)",
+    data: [0, 59, 75, 20, 20, 55, 40],
+  }]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+var lineChart = new Chart(speedCanvas, {
+  type: 'line',
+  data: speedData,
+  options: chartOptions
 });
