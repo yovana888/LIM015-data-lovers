@@ -30,8 +30,8 @@ En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
 izquierda se puede construir una interfaz amigable y entendible por el usuario
 al lado derecho.
 ![prototipo](src/img/prototipo.png)
-![prototipo](src/img/MackBook1.png)
-![prototipo](src/img/MackBook2.png)
+![prototipo](src/img/mackBook1.png)
+![prototipo](src/img/mackBook2.png)
 ![prototipo](src/img/android.png)
 ![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
 
