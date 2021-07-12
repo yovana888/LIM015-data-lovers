@@ -96,16 +96,19 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 60%;
     min-width: 330px;
     height: 70%;
     background: white;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    padding: 0.5em ;
 }
 .modal-text{
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .close{
     position: absolute;
@@ -114,6 +117,13 @@ body {
     cursor:pointer;
     top:10px;
     right:20px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
 }
 
 /* Inicio Codigo para Slider ------------------------------------ */
@@ -236,7 +246,7 @@ body {
     margin-left: 0.4em;
 }
 
-/* Inicio buscador --------------------------------------*/
+/* Inicio filtros --------------------------------------*/
 
 .container-select {
     display: flex;

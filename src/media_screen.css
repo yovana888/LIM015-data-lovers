@@ -30,7 +30,7 @@
         flex-direction: center;
     }
 
-    /*Para el buscador-------------------------------------*/
+    /*Para los filtros-------------------------------------*/
     .input-data-selector {
         display: flex;
         flex-direction: row;
@@ -117,7 +117,7 @@
         display: none;
     }
 
-    /*Para el buscador-------------------------------------*/
+    /*Para los filtros-------------------------------------*/
     .container-select {
         position: relative;
         z-index: 6;
@@ -151,9 +151,6 @@
         width: 180px;
         font-size: 15px;
     }
-
-    
-
     /*Inicio Cards-------------------------------------*/
     .cards {
         justify-content: center;
@@ -184,7 +181,14 @@
     .text-sumary {
         display: none;
     }
-    /*Fin Cards-------------------------------------*/
+
+    /*Para el modal-------------------------------------*/
+    .chart-container {
+        height: 350px;
+        width: 310px;
+    }
+
+    /*Inicio info de Películas-------------------------------------*/
     .container-columns {
         grid-template-columns: 90vw;
     }

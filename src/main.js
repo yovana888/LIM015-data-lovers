@@ -98,33 +98,40 @@ homeMovies.addEventListener("click", () => {
 });
 
 
-/*------------ Gráficos en el modal con ChartData.js----------- */
-var speedCanvas = document.getElementById("speedChart");
-
-Chart.defaults.global.defaultFontFamily = "Lato";
-Chart.defaults.global.defaultFontSize = 18;
-
-var speedData = {
-  labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
-  datasets: [{
-    label: "Car Speed (mph)",
-    data: [0, 59, 75, 20, 20, 55, 40],
-  }]
-};
-
-var chartOptions = {
-  legend: {
-    display: true,
-    position: 'top',
-    labels: {
-      boxWidth: 80,
-      fontColor: 'black'
+/*------------ Estadísticas del modal con ChartData.js----------- */
+const data = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+    datasets: [{
+      label: "Dataset #1",
+      backgroundColor: "rgba(255,99,132,0.2)",
+      borderColor: "rgba(255,99,132,1)",
+      borderWidth: 2,
+      hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      hoverBorderColor: "rgba(255,99,132,1)",
+      data: [65, 59, 20, 81, 56, 55, 40],
+    }]
+  };
+  
+  var options = {
+    maintainAspectRatio: false,
+    scales: {
+      yAxes: [{
+        stacked: true,
+        gridLines: {
+          display: true,
+          color: "rgba(255,99,132,0.2)"
+        }
+      }],
+      xAxes: [{
+        gridLines: {
+          display: false
+        }
+      }]
     }
-  }
-};
-
-var lineChart = new Chart(speedCanvas, {
-  type: 'line',
-  data: speedData,
-  options: chartOptions
-});
+  };
+  
+  Chart.Bar('chart', {
+    options: options,
+    data: data
+  });
+  

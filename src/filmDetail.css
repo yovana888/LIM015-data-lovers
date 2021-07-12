@@ -22,15 +22,13 @@ body {
     background:  #E5E5E5;
     padding-bottom: 20px;
 } 
-
-/*---------------------Portada ---------------------------------*/
-
 .first-column-container,
 .second-column-container{  
     display: flex;
     flex-direction: column ; 
     gap:25px;
-} 
+}
+ /*--------------------- Imagen de Portada ---------------------------------*/
 .container-img{
     position: relative;
     margin: 170px auto 0;
@@ -42,7 +40,7 @@ body {
     border-radius: 10px;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
 } 
-/*  ---------------------Título---------------------------------*/
+/*  ---------------------Contenedor título de la Película---------------------------------*/
 
 .container-title{
     position: relative;
@@ -112,7 +110,7 @@ body {
 .locations{
     max-height: 680px;
 }
-/*  --------------------- scroll---------------------------------*/
+/*  --------------------- Scroll---------------------------------*/
 .detail-content-box{
     overflow-y: scroll;
 }
@@ -131,7 +129,7 @@ body {
 .detail-content-box::-webkit-scrollbar-thumb{
     background-color: #FF3060;
 }
-/*  --------------------- detalles de contenedores---------------------------------*/
+/*  --------------------- Detalles de contenedores---------------------------------*/
 
 .locations-detail-box,
 .vehicles-detail-box{
@@ -237,12 +235,12 @@ body {
     width: 22vw;
     min-width: 250px;
 }
-
+/*  --------------------- Para que aparezcan los contenedores---------------------------------*/
 #container-synopsis-show,
-    #container-title-show{
-        display: none;
-    }
-    #container-title,
-    #container-synopsis{
-        display:block;
-    }
+#container-title-show{
+    display: none;
+}
+#container-title,
+#container-synopsis{
+    display:block;
+}
