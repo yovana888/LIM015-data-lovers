@@ -1,6 +1,6 @@
-import { showData, filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
-import dataGhibli from './data/ghibli/ghibli.js';
-const allData = dataGhibli.films;
+import {filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
+import {showData,allData} from './template.js';
+
 const cardsList = document.querySelector("#cardsList");
 const selectDirector = document.querySelector("#directors");
 const selectProducer = document.querySelector("#producers");

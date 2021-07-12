@@ -1,29 +1,68 @@
-import {filterBySearch} from '../src/data.js';
+import {filterBySearch,filterByDirector,filterByProducer,filterBySort} from '../src/data.js';
 /* -------- Filtrado por search -------*/
 describe('filterBySearch', () => {
-  const search = "totoro";
-  const ghibliData = {"films": [
-    {
-      "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
-      "title": "Castle in the Sky",
-    },
-    {
-      "id": "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
-      "title": "My Neighbor Totoro",
-    }
-  ] };
-  const dataFilterSearch = [
-    {"id": "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
-    "title": "My Neighbor Totoro"}
-  ];
-
-  it('is a function', () => {
+  it('is a function filterBySearch', () => {
     expect(typeof filterBySearch).toBe('function');
   });
 
-  it('decería retornar la información de My Neighbor Totoro', () => {
-    expect(filterBySearch(search,ghibliData)).toEqual(dataFilterSearch);
+  it("Debería retornar `My Neighbor Totoro`", () => {
+    const dataPrueba = [{ title: "Castle in the Sky" }, { title: "My Neighbor Totoro" }];
+    expect(filterBySearch(`totoro`, dataPrueba)).toStrictEqual([
+      { title: "My Neighbor Totoro"}
+    ]);
   });
 });
 
+/* -------- Filtrado por director -------*/
+describe('filterByDirector',()=>{
+  it('is a function filterByDirector', () => {
+    expect(typeof filterByDirector).toBe('function');
+  });
+  it("Debería retornar `Yoshifumi Kondō`", () => {
+    const dataPrueba = [{ director: "Yoshifumi Kondō",title: "Whisper of the Heart" }, { director: "Hayao Miyazaki",title: "Castle in the Sky"}];
+    expect(filterByDirector(`Yoshifumi Kondō`, dataPrueba)).toEqual([
+      { director: "Yoshifumi Kondō",title: "Whisper of the Heart"}
+    ]);
+  });
+});
 
+/* -------- Filtrado por productor -------*/
+describe('filterByProducer',()=>{
+  it('is a function filterByProducer', () => {
+    expect(typeof filterByProducer).toBe('function');
+  });
+  it("Debería retornar `Toru Hara`", () => {
+    const dataPrueba = [{producer: "Toru Hara",title: "Grave of the Fireflies"}, { producer: "Isao Takahata",title: "Castle in the Sky"}];
+    expect(filterByProducer(`Toru Hara`, dataPrueba)).toEqual([
+      { producer: "Toru Hara",title: "Grave of the Fireflies"},
+    ]);
+  });
+});
+
+/* -------- Filtrado por sort -------*/
+describe('filterBySort',()=>{
+  it('is a function filterBySort', () => {
+    expect(typeof filterBySort).toBe('function');
+  });
+
+  it("Debería retornar `BestRated` ordenado", () => {
+    const dataPrueba = [{rt_score: "95",title: "Castle in the Sky"}, {rt_score: "100",title: "Only Yesterday"}];
+    expect(filterBySort(`BestRated`, dataPrueba)).toEqual([
+      {rt_score: "100",title: "Only Yesterday"},{rt_score: "95",title: "Castle in the Sky"}
+    ]);
+  });
+
+  it("Debería retornar `MostRecent` ordenado", () => {
+    const dataPrueba = [{release_date: "1986",title: "Castle in the Sky"}, {release_date: "1988",title: "My Neighbor Totoro"}];
+    expect(filterBySort(`MostRecent`, dataPrueba)).toEqual([
+      {release_date: "1988",title: "My Neighbor Totoro"},{release_date: "1986",title: "Castle in the Sky"}
+    ]);
+  });
+
+  it("Debería retornar `TheOldest` ordenado", () => {
+    const dataPrueba = [{release_date: "1988",title: "My Neighbor Totoro"},{release_date: "1986",title: "Castle in the Sky"}];
+    expect(filterBySort(`TheOldest`, dataPrueba)).toEqual([
+      {release_date: "1986",title: "Castle in the Sky"}, {release_date: "1988",title: "My Neighbor Totoro"}
+    ]);
+  });
+});
