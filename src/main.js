@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import {filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
-import {showData,allData} from './template.js';
+import { filterBySearch, filterByDirector, filterByProducer, filterBySort } from './data.js';
+import { showData, allData } from './template.js';
 
 const cardsList = document.querySelector("#cardsList");
 const selectDirector = document.querySelector("#directors");
@@ -12,7 +12,7 @@ const inputTypeSearch = document.querySelector("input[type=search]");
 const mainCards = document.querySelector("#main-cards");
 const mainFilms = document.querySelector("#main-film");
 const homeLogo = document.querySelector("#home-logo");
-const homeMovies=document.querySelector("#show-section");
+const homeMovies = document.querySelector("#show-section");
 let inputSearch = document.querySelector("#search");
 
 
@@ -99,49 +99,47 @@ homeMovies.addEventListener("click", () => {
 
 
 /*------------ Estadísticas del modal con ChartData.js----------- */
-let x = [];
-let y = [];
+let x = []; //Aqui se gardaran los score de las peliculas y sera la data para nuestro eje x
+let y = []; //Aqui se gardaran los titulos de las peliculas y sera la data para nuestro eje y
 let dataSortChart = filterBySort('BestRated', allData);
-let dataTopTen = dataSortChart.filter((film, i) => i<10);
-for(let key in dataTopTen){
-     x.push(dataTopTen[key].title);
-     y.push(dataTopTen[key].rt_score);
+let dataTopTen = dataSortChart.filter((_, i) => i < 10); //El subguion es por que no estamos usando los values
+//Alamacenamos con push los valores que nos importan de nuestro objeto dataTopTen
+for (let key in dataTopTen) {
+    y.push(dataTopTen[key].title);
+    x.push(dataTopTen[key].rt_score);
 }
 
-const data = { 
-    labels: x,
-    datasets: [{
-      label: "Movies",
-      backgroundColor: "rgba(255,99,132,0.2)",
-      borderColor: "rgba(255,99,132,1)",
-      borderWidth: 2,
-      hoverBackgroundColor: "rgba(255,99,132,0.4)",
-      hoverBorderColor: "rgba(255,99,132,1)",
-      data: y,
-    }]
-};
+x.push(91); //valor inicial en nuestro graficos
+y.push("")
 
-var options = {
-    maintainAspectRatio: false,
-    scales: {
-        yAxes: [{
-            stacked: true,
-            gridLines: {
-                display: true,
-                color: "rgba(255,99,132,0.2)"
-            }
-        }],
-    xAxes: [{
-        gridLines: {
-            display: false
+
+
+new Chart('chart', {
+    type: 'horizontalBar',
+    data: {
+        labels: y,
+        datasets: [{
+            label: "rt_score",
+            backgroundColor: "#7a6aef",
+            data: x
+        }]
+    },
+    options: {
+
+        legend: { display: false },
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    display: true,
+                    color: "#efeeee"
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }]
         }
-    }]
-   }
-};
 
-Chart.Bar('chart', {
-    type: "horizontalBar",
-    options: options,
-    data: data
+    }
 });
-  

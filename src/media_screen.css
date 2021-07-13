@@ -1,5 +1,5 @@
 /*Inicio de medias--------------------------------------*/
-    
+
 @media screen and (max-width:1024px) {
     .logo_imagen {
         max-width: 100%;
@@ -14,7 +14,6 @@
     .nav-menu-link {
         font-size: 18px;
     }
-    
     /*Para el Silder-------------------------------------*/
     .contenido-slider>div {
         width: 40%;
@@ -29,7 +28,6 @@
         margin-top: -30px;
         flex-direction: center;
     }
-
     /*Para los filtros-------------------------------------*/
     .input-data-selector {
         display: flex;
@@ -43,8 +41,6 @@
         font-size: 12px;
         width: 130px;
     }
-    
-
     /*Inicio Cards pendiente para iopad pro-------------------------------------*/
     .cards {
         justify-content: center;
@@ -52,22 +48,19 @@
         font-size: 13px;
     }
     /*Inicio Cards pendiente para iopad pro-------------------------------------*/
-
     .container-columns {
         grid-template-columns: 40vw 50vw;
     }
-    .text{
+    .text {
         font-size: 16px;
     }
-    .filmaker{
+    .filmaker {
         font-size: 18px;
     }
     .locationsDetails,
-    .vehiclesDetails{
+    .vehiclesDetails {
         padding: 0 15px;
     }
-    
-    
 }
 
 @media screen and (max-width:778px) {
@@ -87,7 +80,6 @@
         text-align: center;
         flex-direction: column;
     }
-
     .nav-menu-list {
         margin-top: 20px;
         padding: 0px;
@@ -95,13 +87,13 @@
     }
     .nav-menu-link {
         font-size: 20px;
-        color: white; 
+        color: white;
     }
     .nav-menu-link:hover {
         background: linear-gradient(95.41deg, #9B3CB7 9.04%, #FF3060 115.84%);
         box-shadow: 0px 0px 9px 3px #9F3CB4;
         transition: .2s;
-        color:white;
+        color: white;
     }
     .nav-menu-list:last-child {
         padding: 30px;
@@ -116,13 +108,11 @@
     .contenido-slider>img {
         display: none;
     }
-
     /*Para los filtros-------------------------------------*/
     .container-select {
         position: relative;
         z-index: 6;
     }
-
     #search {
         width: 200px;
     }
@@ -137,12 +127,10 @@
         right: 8vw;
         display: none;
     }
-
     .input-selector {
         background-color: white;
         padding: 18px;
     }
-    
     .filter {
         padding: 0;
     }
@@ -167,46 +155,42 @@
         height: 230px;
         border-radius: 20px 20px 0px 0px;
     }
-
     .text-card {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
         height: 45px;
         padding: auto;
-        border-radius:0px 0px 20px 20px ;
+        border-radius: 0px 0px 20px 20px;
     }
-    .title-card{
-        text-align: center; 
+    .title-card {
+        text-align: center;
     }
     .text-sumary {
         display: none;
     }
-
     /*Para el modal-------------------------------------*/
     .chart-container {
         height: 350px;
         width: 310px;
     }
-
     /*Inicio info de Películas-------------------------------------*/
     .container-columns {
         grid-template-columns: 90vw;
     }
-    .container-title{
+    .container-title {
         margin: 120px 25px 0;
     }
-    .container-img{
+    .container-img {
         margin: 20px auto 0;
-    } 
+    }
     #container-synopsis-show,
-    #container-title-show{
+    #container-title-show {
         display: block;
     }
     #container-title,
-    #container-synopsis{
-        display:none;
+    #container-synopsis {
+        display: none;
     }
-    
 }
 
 
