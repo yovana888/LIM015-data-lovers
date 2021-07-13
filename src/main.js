@@ -99,39 +99,49 @@ homeMovies.addEventListener("click", () => {
 
 
 /*------------ Estadísticas del modal con ChartData.js----------- */
-const data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+let x = [];
+let y = [];
+let dataSortChart = filterBySort('BestRated', allData);
+let dataTopTen = dataSortChart.filter((film, i) => i<10);
+for(let key in dataTopTen){
+     x.push(dataTopTen[key].title);
+     y.push(dataTopTen[key].rt_score);
+}
+
+const data = { 
+    labels: x,
     datasets: [{
-      label: "Dataset #1",
+      label: "Movies",
       backgroundColor: "rgba(255,99,132,0.2)",
       borderColor: "rgba(255,99,132,1)",
       borderWidth: 2,
       hoverBackgroundColor: "rgba(255,99,132,0.4)",
       hoverBorderColor: "rgba(255,99,132,1)",
-      data: [65, 59, 20, 81, 56, 55, 40],
+      data: y,
     }]
-  };
-  
-  var options = {
+};
+
+var options = {
     maintainAspectRatio: false,
     scales: {
-      yAxes: [{
-        stacked: true,
+        yAxes: [{
+            stacked: true,
+            gridLines: {
+                display: true,
+                color: "rgba(255,99,132,0.2)"
+            }
+        }],
+    xAxes: [{
         gridLines: {
-          display: true,
-          color: "rgba(255,99,132,0.2)"
+            display: false
         }
-      }],
-      xAxes: [{
-        gridLines: {
-          display: false
-        }
-      }]
-    }
-  };
-  
-  Chart.Bar('chart', {
+    }]
+   }
+};
+
+Chart.Bar('chart', {
+    type: "horizontalBar",
     options: options,
     data: data
-  });
+});
   

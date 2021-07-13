@@ -2,7 +2,6 @@
 export const filterBySearch = (search, allData) => {
     let searchConverted = search.toLowerCase();
     let dataFilterSearch = allData.filter(film => film.title.toLowerCase().includes(searchConverted));
-    console.log(dataFilterSearch);
     return dataFilterSearch;
 }
 
