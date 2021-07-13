@@ -32,10 +32,24 @@ export const filterBySort = (sort, allData) => {
                 });
                 break;
             }
-        default:
+        case 'TheOldest':
             {
                 dataSort = allData.sort((film1, film2) => {
                     return film1.release_date - film2.release_date;
+                });
+                break;
+            }
+        case 'a-z':
+            {
+                dataSort = allData.sort((film1, film2) => {
+                    return (film1.title > film2.title) ? 1 : -1;
+                });
+                break;
+            }
+        case 'z-a':
+            {
+                dataSort = allData.sort((film1, film2) => {
+                    return (film1.title < film2.title) ? 1 : -1;
                 });
                 break;
             }

@@ -28,7 +28,14 @@
                 <li class="nav-menu-list">
                     <a href="#" class="nav-menu-link" id="open-modal">Statistics</a>
                 </li>
-                <li class="nav-menu-list mode-dark"> <i class="fa fa-moon-o"></i> Dark Mode <i class="fa fa-toggle-on toggle ml-2" aria-hidden="true"></i></li>
+                <li class="nav-menu-list mode-dark"> 
+                    <input type="checkbox" class="checkbox" id="check">
+                    <label class="label" for="check">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </li>
             </ul>
         </nav>
     </header>
@@ -115,6 +122,8 @@
                                 <option value="BestRated">Best rated</option>
                                 <option value="MostRecent">Most Recent</option>
                                 <option value="TheOldest">The oldest</option>
+                                <option value="a-z">From A - Z</option>
+                                <option value="z-a">From Z - A</option>
                             </select>
                     </div>
                 </div>

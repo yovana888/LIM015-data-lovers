@@ -32,8 +32,8 @@ export const showData = (data) => {
               <span class="year-card"> ${data.release_date}</span>
               <span class="score-card"> ${data.rt_score}<i class="fas fa-star"></i></span>
           </div>
-          <div class="text-card">
-              <h1 class="title-card">${data.title}</h1>
+          <div class="text-card ">
+              <h1 class="title-card ">${data.title}</h1>
               <p class="text-sumary">${shortDescription}...</p>
               <p class="text-sumary maker">Director: ${data.director}</p>
               <p class="text-sumary maker">Producer: ${data.producer}</p>

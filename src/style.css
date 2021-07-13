@@ -52,7 +52,9 @@ body {
 }
 
 .nav-menu-list:last-child {
-    padding: 20px 0px 0px 50px;
+    padding: 15px 0px 0px 50px;  
+    display: flex;
+    justify-content: center;
 }
 
 .nav-menu-link {
@@ -62,17 +64,41 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
+/*  Inicio de modal -------------------------------------- */
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
 
-.mode-dark {
+.label{
+    background-color:rgb(161, 31, 100) ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 55px;
+    border-radius: 50px;
+}
+.ball{
+    position: absolute;
+    top:2px;
+    left:2px;
+    background-color: rgb(240, 236, 236);
+    border-radius: 50%;
+    height: 25px;
+	width: 25px;
+}
+
+.fa-moon,
+.fa-sun{
+    color:rgb(216, 216, 41) ;
     font-size: 20px;
-    color: #FAB818;
 }
-
-.nav-menu-link:hover {
-    cursor: pointer;
-    color: #FF3060;
+.checkbox:checked + .label .ball {
+	transform: translateX(25px);
 }
-
 /*  Inicio de modal -------------------------------------- */
 
 .modal-container{
@@ -97,7 +123,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 60%;
+    width: 58%;
     min-width: 330px;
     height: 70%;
     background: white;
@@ -108,7 +134,10 @@ body {
 .modal-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.modal-text>h2{
+    margin:0px;
 }
 .close{
     position: absolute;
@@ -121,10 +150,11 @@ body {
 
 .chart-container {
     position: relative;
-    margin: auto;
-    height: 50vh;
+    margin: 0;
     width: 50vw;
+    min-width: 300px;
 }
+
 
 /* Inicio Codigo para Slider ------------------------------------ */
 
@@ -340,12 +370,12 @@ body {
     position: relative;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    height: 220px;
+    height: 230px;
 }
 
 .card-img>img {
     width: 150px;
-    height: 220px;
+    height: 230px;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -456,3 +486,25 @@ body {
     margin-top: 0px;
     margin-bottom: 2vh;
 }
+/*----- MODO DARK -----*/
+body.dark{
+    background: #292C35;  
+}
+.container-select.dark {
+    background: #45415c;
+}
+
+.input-data.dark{
+    background-color: #45415c;
+    color:white;
+}
+.input-data-short.dark{
+    background-color: #45415c;
+    color:white;
+}
+/* .input-data::placeholder {
+    color: white;
+}
+.icon-search {
+    color: white;
+} */

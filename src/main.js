@@ -109,8 +109,6 @@ for (let key in dataTopTen) {
     x.push(dataTopTen[key].rt_score);
 }
 
-x.push(91); //valor inicial en nuestro graficos
-y.push("")
 
 
 
@@ -125,16 +123,21 @@ new Chart('chart', {
         }]
     },
     options: {
-
+        
         legend: { display: false },
         scales: {
             xAxes: [{
                 gridLines: {
                     display: true,
-                    color: "#efeeee"
-                }
+                    color: "#efeeee",
+                },
+                ticks: {
+                    min: 90,
+                    max: 100
+                },
             }],
             yAxes: [{
+                barPercentage: 0.7,
                 gridLines: {
                     display: false
                 }
@@ -143,3 +146,4 @@ new Chart('chart', {
 
     }
 });
+
