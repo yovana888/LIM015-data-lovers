@@ -46,7 +46,7 @@ export const filterBySort = (sort, allData) => {
                 });
                 break;
             }
-        case 'z-a':
+        default:
             {
                 dataSort = allData.sort((film1, film2) => {
                     return (film1.title < film2.title) ? 1 : -1;

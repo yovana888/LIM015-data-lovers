@@ -36,7 +36,7 @@ addEventListener('DOMContentLoaded', () => {
 /*----botón del modo dark---- */
 const containerSelect = document.querySelector('.container-select');
 let inputDataShort = document.querySelector('.input-data-short');
-console.log(inputDataShort)
+
 const inputData = document.querySelector('.input-data');
 const check = document.getElementById('check');
 

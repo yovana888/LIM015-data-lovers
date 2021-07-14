@@ -526,7 +526,7 @@ body.dark {
 }
 
 .input-data-short.dark {
-    background-color: #45415c;
+    background-color: rgb(62, 35, 93);
     color: white;
 }
 

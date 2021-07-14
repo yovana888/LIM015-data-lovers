@@ -19,9 +19,9 @@ describe('filterByDirector',()=>{
     expect(typeof filterByDirector).toBe('function');
   });
   it("Debería retornar `Yoshifumi Kondō`", () => {
-    const dataPrueba = [{ director: "Yoshifumi Kondō",title: "Whisper of the Heart" }, { director: "Hayao Miyazaki",title: "Castle in the Sky"}];
+    const dataPrueba = [{ director: "Yoshifumi Kondō",title: "Whisper of the Heart"}, { director: "Hayao Miyazaki",title: "Castle in the Sky"}];
     expect(filterByDirector(`Yoshifumi Kondō`, dataPrueba)).toEqual([
-      { director: "Yoshifumi Kondō",title: "Whisper of the Heart"}
+      { director: "Yoshifumi Kondō", title: "Whisper of the Heart"}
     ]);
   });
 });
@@ -63,6 +63,18 @@ describe('filterBySort',()=>{
     const dataPrueba = [{release_date: "1988",title: "My Neighbor Totoro"},{release_date: "1986",title: "Castle in the Sky"}];
     expect(filterBySort(`TheOldest`, dataPrueba)).toEqual([
       {release_date: "1986",title: "Castle in the Sky"}, {release_date: "1988",title: "My Neighbor Totoro"}
+    ]);
+  });
+  it("Debería retornar `a-z` ordenado", () => {
+    const dataPrueba = [{title: "Castle in the Sky"},{title: "My Neighbor Totoro"}];
+    expect(filterBySort(`a-z`, dataPrueba)).toEqual([
+      {title: "Castle in the Sky"},{title: "My Neighbor Totoro"}
+    ]);
+  });
+  it("Debería retornar `z-a` ordenado", () => {
+    const dataPrueba = [{title: "Castle in the Sky"},{title: "My Neighbor Totoro"}];
+    expect(filterBySort(`z-a`, dataPrueba)).toEqual([
+      {title: "My Neighbor Totoro"},{title: "Castle in the Sky"}
     ]);
   });
 });
