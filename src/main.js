@@ -101,16 +101,16 @@ homeMovies.addEventListener("click", () => {
 /*------------ Estadísticas del modal con ChartData.js----------- */
 let x = []; //Aqui se gardaran los score de las peliculas y sera la data para nuestro eje x
 let y = []; //Aqui se gardaran los titulos de las peliculas y sera la data para nuestro eje y
-let dataSortChart = filterBySort('BestRated', allData);
-let dataTopTen = dataSortChart.filter((_, i) => i < 10); //El subguion es por que no estamos usando los values
-//Alamacenamos con push los valores que nos importan de nuestro objeto dataTopTen
-for (let key in dataTopTen) {
-    y.push(dataTopTen[key].title);
-    x.push(dataTopTen[key].rt_score);
+let dataOrderScore = filterBySort('BestRated', allData); //Ordenamos de mayor a menor score
+//solo queremos los 10 primeros
+for (let key in dataOrderScore) {
+    if (key < 10) {
+        y.push(dataOrderScore[key].title);
+        x.push(dataOrderScore[key].rt_score);
+    } else {
+        break; //rompe el el ciclo
+    }
 }
-
-
-
 
 new Chart('chart', {
     type: 'horizontalBar',
@@ -123,7 +123,7 @@ new Chart('chart', {
         }]
     },
     options: {
-        
+
         legend: { display: false },
         scales: {
             xAxes: [{
@@ -146,4 +146,3 @@ new Chart('chart', {
 
     }
 });
-

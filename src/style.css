@@ -5,6 +5,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+
 /* Inicio header ---------------------------------------------------*/
 
 .logo_imagen {
@@ -52,7 +53,7 @@ body {
 }
 
 .nav-menu-list:last-child {
-    padding: 15px 0px 0px 50px;  
+    padding: 15px 0px 0px 50px;
     display: flex;
     justify-content: center;
 }
@@ -64,14 +65,17 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
+
+
 /*  Inicio de modal -------------------------------------- */
+
 .checkbox {
-	opacity: 0;
-	position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 
-.label{
-    background-color:rgb(161, 31, 100) ;
+.label {
+    background-color: rgb(161, 31, 100);
     position: relative;
     display: flex;
     align-items: center;
@@ -81,32 +85,36 @@ body {
     width: 55px;
     border-radius: 50px;
 }
-.ball{
+
+.ball {
     position: absolute;
-    top:2px;
-    left:2px;
+    top: 2px;
+    left: 2px;
     background-color: rgb(240, 236, 236);
     border-radius: 50%;
     height: 25px;
-	width: 25px;
+    width: 25px;
 }
 
 .fa-moon,
-.fa-sun{
-    color:rgb(216, 216, 41) ;
+.fa-sun {
+    color: rgb(216, 216, 41);
     font-size: 20px;
 }
-.checkbox:checked + .label .ball {
-	transform: translateX(25px);
+
+.checkbox:checked+.label .ball {
+    transform: translateX(25px);
 }
+
+
 /*  Inicio de modal -------------------------------------- */
 
-.modal-container{
+.modal-container {
     position: fixed;
     z-index: -1;
     height: 100vh;
     width: 100%;
-    top:0;
+    top: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -114,11 +122,13 @@ body {
     align-items: center;
     opacity: 0;
 }
-.modal-container.show-modal{
+
+.modal-container.show-modal {
     opacity: 1;
     z-index: 12;
 }
-.modal{
+
+.modal {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -129,23 +139,26 @@ body {
     background: white;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    padding: 0.5em ;
+    padding: 0.5em;
 }
-.modal-text{
+
+.modal-text {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.modal-text>h2{
-    margin:0px;
+
+.modal-text>h2 {
+    margin: 0px;
 }
-.close{
+
+.close {
     position: absolute;
-    color:#FF3060;
-    font-size:30px;
-    cursor:pointer;
-    top:10px;
-    right:20px;
+    color: #FF3060;
+    font-size: 30px;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
 }
 
 .chart-container {
@@ -266,6 +279,7 @@ body {
     margin-left: 0;
 }
 
+
 /*Inicio Codigo Mode dark --------------------------------*/
 
 .toggle {
@@ -275,6 +289,7 @@ body {
 .ml-2 {
     margin-left: 0.4em;
 }
+
 
 /* Inicio filtros --------------------------------------*/
 
@@ -287,7 +302,7 @@ body {
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     height: 60px;
-    width: 80vw;
+    width: 84.5vw;
     margin: 4vh auto;
 }
 
@@ -310,9 +325,11 @@ body {
     align-items: center;
     gap: 25px;
 }
-.input-data-selector.show-filter{
+
+.input-data-selector.show-filter {
     display: block;
 }
+
 .input-selector {
     position: relative;
 }
@@ -336,6 +353,7 @@ body {
     font-size: 18px;
     cursor: pointer;
 }
+
 
 /*Inicio Codigo para Cards -----------------------------*/
 
@@ -439,23 +457,27 @@ body {
     margin-top: 3px;
 }
 
+
 /*  Inicio de Not found -------------------------------------- */
 
-.ghibli-notFound{
+.ghibli-notFound {
     position: relative;
     text-align: center;
     color: #fff;
     display: none;
 }
-.img-not-found{
+
+.img-not-found {
     border-radius: 10px;
 }
 
-.notF{
+.notF {
     position: absolute;
     top: 50px;
     left: 500px;
 }
+
+
 /*  Inicio de footer -------------------------------------- */
 
 .nav-footer {
@@ -486,22 +508,29 @@ body {
     margin-top: 0px;
     margin-bottom: 2vh;
 }
+
+
 /*----- MODO DARK -----*/
-body.dark{
-    background: #292C35;  
+
+body.dark {
+    background: #292C35;
 }
+
 .container-select.dark {
     background: #45415c;
 }
 
-.input-data.dark{
+.input-data.dark {
     background-color: #45415c;
-    color:white;
+    color: white;
 }
-.input-data-short.dark{
+
+.input-data-short.dark {
     background-color: #45415c;
-    color:white;
+    color: white;
 }
+
+
 /* .input-data::placeholder {
     color: white;
 }
