@@ -65,16 +65,35 @@ describe('filterBySort',()=>{
       {release_date: "1986",title: "Castle in the Sky"}, {release_date: "1988",title: "My Neighbor Totoro"}
     ]);
   });
+
+ /*-----------  Descomentamos los de abajo si usamos el operador ternario ---------*/
+ 
   it("Debería retornar `a-z` ordenado", () => {
     const dataPrueba = [{title: "Castle in the Sky"},{title: "My Neighbor Totoro"}];
     expect(filterBySort(`a-z`, dataPrueba)).toEqual([
       {title: "Castle in the Sky"},{title: "My Neighbor Totoro"}
     ]);
   });
+
+ /*  it("Debería retornar `a-z`igual", () => {
+    const dataPrueba = [{title: "Castle in the Sky"},{title: "Castle in the Sky"}];
+    expect(filterBySort(`a-z`, dataPrueba)).toEqual([
+      {title: "Castle in the Sky"},{title: "Castle in the Sky"}
+    ]);
+  }); */
+
   it("Debería retornar `z-a` ordenado", () => {
     const dataPrueba = [{title: "Castle in the Sky"},{title: "My Neighbor Totoro"}];
     expect(filterBySort(`z-a`, dataPrueba)).toEqual([
       {title: "My Neighbor Totoro"},{title: "Castle in the Sky"}
     ]);
   });
+
+  /* it("Debería retornar `z-a` tal cual", () => {
+    const dataPrueba = [{title: "My Neighbor Totoro"},{title: "Castle in the Sky"}];
+    expect(filterBySort(`z-a`, dataPrueba)).toEqual([
+      {title: "My Neighbor Totoro"},{title: "Castle in the Sky"}
+    ]);
+  }); */
+  
 });

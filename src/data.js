@@ -42,17 +42,26 @@ export const filterBySort = (sort, allData) => {
         case 'a-z':
             {
                 dataSort = allData.sort((film1, film2) => {
-                    return (film1.title > film2.title) ? 1 : -1;
+                    return film1.title.localeCompare(film2.title);
                 });
                 break;
             }
         default:
             {
                 dataSort = allData.sort((film1, film2) => {
-                    return (film1.title < film2.title) ? 1 : -1;
+                    return film2.title.localeCompare(film2.title);
                 });
                 break;
             }
     }
     return dataSort;
 }
+/* dataSort = allData.sort((film1, film2) => {
+    return (film1.title > film2.title) ? 1 : -1;
+});
+break;
+
+dataSort = allData.sort((film1, film2) => {
+    return (film1.title < film2.title) ? 1 : -1;
+});
+break; */

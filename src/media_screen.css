@@ -65,6 +65,7 @@
     .modal{
         height: 60%;
     }
+   
 }
 
 @media screen and (max-width:778px) {
@@ -99,9 +100,7 @@
         transition: .2s;
         color: white;
     }
-    .nav-menu-list:last-child {
-        padding: 30px;
-    }
+    
     .label{
         transform: scale(1.2);
     }
