@@ -54,7 +54,7 @@ body {
 
 .nav-menu-link {
     display: block;
-    padding: 20px;
+    padding: 20px 30px;
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -67,45 +67,6 @@ body {
 .fa-chart-bar{
     padding-left: 10px;
 }
-/*  Inicio de modal -------------------------------------- */
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.label {
-    background-color: rgb(161, 31, 100);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-    height: 30px;
-    width: 55px;
-    border-radius: 50px;
-}
-
-.ball {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    background-color: rgb(240, 236, 236);
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
-}
-
-.fa-moon,
-.fa-sun {
-    color: rgb(216, 216, 41);
-    font-size: 20px;
-}
-
-.checkbox:checked+.label .ball {
-    transform: translateX(25px);
-}
-
 
 /*  Inicio de modal -------------------------------------- */
 
@@ -279,18 +240,6 @@ body {
     margin-left: 0;
 }
 
-
-/*Inicio Codigo Mode dark --------------------------------*/
-
-.toggle {
-    color: #fff;
-}
-
-.ml-2 {
-    margin-left: 0.4em;
-}
-
-
 /* Inicio filtros --------------------------------------*/
 
 .container-select {
@@ -459,22 +408,24 @@ body {
 
 
 /*  Inicio de Not found -------------------------------------- */
-
+.img-not-found {
+    width: 40vw;
+    min-width: 300px;
+    border-radius: 10px;
+}
 .ghibli-notFound {
     position: relative;
     text-align: center;
-    color: #fff;
+    margin-bottom: 20px;
     display: none;
 }
-
-.img-not-found {
-    border-radius: 10px;
-}
-
 .notF {
+    
     position: absolute;
-    top: 50px;
-    left: 500px;
+    top: 3vw;
+    left: 40vw;
+    color: #fff;
+    font-size: 3vw;
 }
 
 
@@ -508,32 +459,3 @@ body {
     margin-top: 0px;
     margin-bottom: 2vh;
 }
-
-
-/*----- MODO DARK -----*/
-
-body.dark {
-    background: #292C35;
-}
-
-.container-select.dark {
-    background: #45415c;
-}
-
-.input-data.dark {
-    background-color: #45415c;
-    color: white;
-}
-
-.input-data-short.dark {
-    background-color: rgb(62, 35, 93);
-    color: white;
-}
-
-
-/* .input-data::placeholder {
-    color: white;
-}
-.icon-search {
-    color: white;
-} */

@@ -17,10 +17,13 @@
 <body>
     <header class="header">
         <nav class="nav">
+
             <div class="logo">
                 <a href="#" id="home-logo" class="home"><img src="img/data-ghibli.png" alt="Data-Ghibli" class="logo_imagen"></a>
             </div>
+
             <span class="nav-toggle"><i class="fas fa-bars"></i></span>
+
             <ul class="nav-menu">
                 <li class="nav-menu-list">
                     <a href="#section-filter" class="nav-menu-link home" id="show-section">Movies <i class="fas fa-film"></i></a>
@@ -32,6 +35,7 @@
             </ul>
         </nav>
     </header>
+
     <main id="main-cards">
         <section>
             <div class="contenedor">
@@ -44,11 +48,10 @@
                             <br>
                             <img src="img/img_linea.png" alt="" id="img_linea">
                         </div>
-
                     </section>
+
                     <section class="contenido-slider" id="slider-2">
                         <div>
-
                             <h2>"Spirited Away" will be a play</h2>
                             <hr color="#FF3060" size="5" width="60" class="line">
                             <p class="text-left">According to IndieWire, Spirited Away is going to become a play produced by Toho and directed by British John Baird, responsible for other hits on stage such as Les Misérables. or March 2022 in Tokyo, and then start a tour
@@ -56,8 +59,8 @@
                             <a href="https://n9.cl/ro44c" target="_blank">See more</a>
                         </div>
                         <img src="img/chihiro.png" alt="">
-
                     </section>
+
                     <section class="contenido-slider" id="slider-3">
                         <div>
                             <h2>Hayao Miyazaki turns 80</h2>
@@ -72,6 +75,7 @@
                 </div>
             </div>
         </section>
+
         <section id="section-filter">
             <div class="container-select">
                 <div class="input-selector filter">
@@ -137,13 +141,12 @@
 
     <main id="main-film" style="display: none;">
         <section class="background-image">
-            <div class=""></div>
+           <img src="img/background-ghibli.png" class="img-backgound" alt="background-ghibli">
         </section>
 
         <section class="container-columns">
 
             <article class="first-column-container">
-
                 <!------------- Título para el media ------------->
                 <div class="container-title" id="container-title-show">
                     <h1 class="title-new"></h1>
@@ -184,7 +187,7 @@
                     <h2 class="title-box">Locations</h2>
                     <div class="detail-content-box locations" id="container-location">
 
-                        <!------------- Locations ------------->
+                        <!------------- Template Locations ------------->
 
                     </div>
                 </section>
@@ -211,7 +214,7 @@
                     <h2 class="title-box ">Characters</h2>
                     <div class="detail-content-box characters" id="container-characters">
 
-                        <!------------- Characters ------------->
+                        <!-------------Template Characters ------------->
                     </div>
                 </section>
 
@@ -219,7 +222,7 @@
                     <h2 class="title-box">Vehicles</h2>
                     <div class="detail-content-box vehicles" id="container-vehicles">
 
-                        <!------------- Vehicles ------------->
+                        <!-------------Template Vehicles ------------->
                     </div>
                 </section>
             </article>
@@ -230,14 +233,19 @@
         <div class="modal">
             <span class="close"><i class="fas fa-times"></i></span>
             <div class="modal-text">
-                <h2>Top 10 best rated</h2>
+                <h2>Statistical Graphs</h2>
+                <select name="statistics" id="statistics">
+                    <option value="top-ten">Top 10 best rated</option>
+                    <option value="characters-movie">Characters per movie</option>
+                </select>
                 <div class="chart-container">
-                    <canvas id="chart" class="chart"></canvas>
+                    <canvas id="chart-one" class="chart"></canvas>
+                    <canvas id="chart-two" class="chart"></canvas>
                 </div>
             </div>
         </div>
     </section>
-    <br>
+
     <footer>
         <nav class="nav-footer">
             <ul class="nav-menu-footer">

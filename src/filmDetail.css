@@ -12,6 +12,11 @@ body {
     height: 270px;
     background: linear-gradient(180deg, #17172F 0%, rgba(74, 37, 77, 0.76) 100%);
 }
+.img-backgound{
+    width: 100vw;
+    height: 270px;
+    opacity: 0.2;
+}
 .container-columns {
     display: grid;
     grid-template-columns: 32vw 42vw;
@@ -27,6 +32,9 @@ body {
     display: flex;
     flex-direction: column ; 
     gap:25px;
+}
+.container-box:nth-of-type(1){
+    margin-top:20px;
 }
  /*--------------------- Imagen de Portada ---------------------------------*/
 .container-img{
@@ -44,7 +52,7 @@ body {
 
 .container-title{
     position: relative;
-    margin-top: 150px;
+    margin-top: 160px;
     color: white;
 }
 .title-new,
@@ -230,6 +238,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .img-vehicles,
 .img-locations{
     border-radius: 10px;

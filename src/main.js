@@ -14,7 +14,7 @@ const mainFilms = document.querySelector("#main-film");
 const homeLogo = document.querySelector("#home-logo");
 const homeMovies = document.querySelector("#show-section");
 let inputSearch = document.querySelector("#search");
-
+const statistics= document.getElementById("statistics");
 
 // Funcion Cargar Data en Card
 function loadData(data) {
@@ -22,6 +22,7 @@ function loadData(data) {
     for (let key in data) {
         cardsList.appendChild(showData(data[key]));
     }
+    axisChart();
 }
 
 // Cargar Toda la Data al inicio
@@ -99,50 +100,83 @@ homeMovies.addEventListener("click", () => {
 
 
 /*------------ Estadísticas del modal con ChartData.js----------- */
-let x = []; //Aqui se gardaran los score de las peliculas y sera la data para nuestro eje x
-let y = []; //Aqui se gardaran los titulos de las peliculas y sera la data para nuestro eje y
-let dataOrderScore = filterBySort('BestRated', allData); //Ordenamos de mayor a menor score
-//solo queremos los 10 primeros
-for (let key in dataOrderScore) {
-    if (key < 10) {
-        y.push(dataOrderScore[key].title);
-        x.push(dataOrderScore[key].rt_score);
-    } else {
-        break; //rompe el el ciclo
-    }
-}
 
-new Chart('chart', {
-    type: 'horizontalBar',
-    data: {
-        labels: y,
-        datasets: [{
-            label: "rt_score",
-            backgroundColor: "#7a6aef",
-            data: x
-        }]
-    },
-    options: {
-
-        legend: { display: false },
-        scales: {
-            xAxes: [{
-                gridLines: {
-                    display: true,
-                    color: "#efeeee",
-                },
-                ticks: {
-                    min: 90,
-                    max: 100
-                },
-            }],
-            yAxes: [{
-                barPercentage: 0.7,
-                gridLines: {
-                    display: false
-                }
-            }]
-        }
-
-    }
+statistics.addEventListener('change',()=>{
+    axisChart();
 });
+
+function axisChart(){
+    let valueSelect=statistics.value;
+    let x = [];
+    let y = [];
+    let idChart;
+    if(valueSelect=='top-ten'){
+        let dataOrderScore = filterBySort('BestRated', allData); //Ordenamos de mayor a menor score
+        for (let key in dataOrderScore) {
+            if (key < 10) {
+                y.push(dataOrderScore[key].title);
+                x.push(dataOrderScore[key].rt_score);
+            } else {
+                break; //rompe el el ciclo
+            }
+        }
+        idChart ="chart-one";
+    }else{
+        for (let key in allData){
+            let totalCharacters= allData[key].people.length;
+            x.push(totalCharacters);
+            y.push(allData[key].title);
+        }
+        idChart = "chart-two";
+    }
+    drawChart(x,y,idChart);
+}
+function drawChart(x,y,idChart){
+    let min;
+    let max;
+    let canvaOcultar;
+    if( idChart == "chart-one"){
+        min=90;
+        max=100;
+        canvaOcultar="chart-two";
+    }else{
+        min=4;
+        max=13;
+        canvaOcultar="chart-one";
+    }
+    new Chart(idChart, {
+        type: 'horizontalBar',
+        data: {
+            labels: y,
+            datasets: [{
+                backgroundColor: "#7a6aef",
+                data: x
+            }]
+        },
+        options: {
+
+            legend: { display: false },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: true,
+                        color: "#efeeee",
+                    },
+                    ticks: {
+                        min: min,
+                        max: max
+                    },
+                }],
+                yAxes: [{
+                    barPercentage: 0.7,
+                    padding:10,
+                    gridLines: {
+                        display: false
+                    }
+                }]
+            }
+        }
+    });
+    document.getElementById(idChart).style.display="block";
+    document.getElementById(canvaOcultar).style.display="none";
+}
