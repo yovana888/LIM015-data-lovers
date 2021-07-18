@@ -12,13 +12,13 @@ addEventListener('DOMContentLoaded', () => {
         navFilter.classList.toggle('show-filter');
     })
 
-    /*----botón de movies---- */
+    /*---- botón de movies---- */
     const showSection = document.getElementById('show-section')
     showSection.addEventListener('click', () => {
             const navMenu = document.querySelector('.nav-menu');
             navMenu.classList.remove('show');
         })
-        /*----botón de modal---- */
+    /*---- botón de modal---- */
     const openModal = document.getElementById('open-modal');
     const modalContainer = document.querySelector('.modal-container');
     openModal.addEventListener('click', () => {
@@ -26,7 +26,7 @@ addEventListener('DOMContentLoaded', () => {
             navMenu.classList.remove('show');
             modalContainer.classList.add('show-modal');
         })
-        /*----botón del cierre modal---- */
+    /*----botón del cierre modal---- */
     const closeModal = document.querySelector('.close');
     closeModal.addEventListener('click', () => {
         modalContainer.classList.remove('show-modal');

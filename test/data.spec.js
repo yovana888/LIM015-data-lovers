@@ -66,6 +66,13 @@ describe('filterBySort', () => {
             { release_date: "1986", title: "Castle in the Sky" }, { release_date: "1988", title: "My Neighbor Totoro" }
         ]);
     });
+    
+    it("Debería retornar `totalCharacters` ordenado por lenght de people", () => {
+        const dataPrueba = [{ people: [{"name": "Takashi Yamada"}] }, { people: [{"name": "Chihiro Ogino/Sen"},{"name": "Cat King"}] }];
+        expect(filterBySort(`totalCharacters`, dataPrueba)).toEqual([
+            { people: [{"name": "Chihiro Ogino/Sen"},{"name": "Cat King"}] },{ people: [{"name": "Takashi Yamada"}] }
+        ]);
+    });
 
     /*-----------  Descomentamos los de abajo si usamos el operador ternario ---------*/
 

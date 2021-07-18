@@ -99,7 +99,7 @@ homeMovies.addEventListener("click", () => {
 });
 
 
-/*------------ Estadísticas del modal con ChartData.js----------- */
+/*--------------------- Estadísticas del modal con ChartData.js ----------------- */
 
 function drawChart() {
     let x = [];

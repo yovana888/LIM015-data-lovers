@@ -55,7 +55,7 @@ export const filterBySort = (sort, allData) => {
             default:
                 {
                     dataSort = allData.sort((film1, film2) => {
-                        return film2.title.localeCompare(film2.title);
+                        return film2.title.localeCompare(film1.title);
                     });
                     break;
                 }
