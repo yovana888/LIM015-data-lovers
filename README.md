@@ -1,8 +1,6 @@
 # Data Lovers
 
 ![prototipo](src/img/prototipo.png)
-![prototipo](src/img/mackBook1.png)
-![prototipo](src/img/mackBook2.png)
 ![prototipo](src/img/android.png)
 ![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
 
