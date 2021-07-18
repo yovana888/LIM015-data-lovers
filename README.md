@@ -2,9 +2,8 @@
 
 ![prototipo](src/img/prototipo.png)
 ![prototipo](src/img/android.png)
-![prototipo-dibujo](src/img/prototipo-dibujo1.png)
-![prototipo-dibujo](src/img/prototipo-dibujo2.png)
 
+![prototipo-dibujo](src/prototipos.png)
 # Título del Proyecto
 
 _Acá va un párrafo que describa lo que es el proyecto_
