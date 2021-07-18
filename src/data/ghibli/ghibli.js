@@ -148,7 +148,7 @@ export default {
                     "terrain": "TODO",
                     "surface_water": "40",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -159,7 +159,7 @@ export default {
                     "terrain": "Hill",
                     "surface_water": "0",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -170,7 +170,7 @@ export default {
                     "terrain": "City",
                     "surface_water": "40",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -181,7 +181,7 @@ export default {
                     "terrain": "Hill",
                     "surface_water": "30",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 }
             ],
@@ -316,7 +316,7 @@ export default {
                     "terrain": "River",
                     "surface_water": "40",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -327,7 +327,7 @@ export default {
                     "terrain": "River",
                     "surface_water": "60",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -338,7 +338,7 @@ export default {
                     "terrain": "River",
                     "surface_water": "60",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 }
             ],
@@ -422,7 +422,7 @@ export default {
                     "terrain": "TODO",
                     "surface_water": "40",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -433,7 +433,7 @@ export default {
                     "terrain": "Hill",
                     "surface_water": "50",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -444,7 +444,7 @@ export default {
                     "terrain": "City",
                     "surface_water": "30",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -1111,7 +1111,7 @@ export default {
                     "terrain": "Forest",
                     "surface_water": "60",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 }
             ],
@@ -1270,16 +1270,6 @@ export default {
                     "specie": "Witch"
                 },
                 {
-                    "id": "68c4b603-0b31-43dc-b869-a1aa00528b7e",
-                    "name": "Zeniba",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d8/Zeniba.png",
-                    "gender": "Female",
-                    "age": "Elder",
-                    "eye_color": "Dark brown",
-                    "hair_color": "White",
-                    "specie": "Witch"
-                },
-                {
                     "id": "0588017a-8113-43cd-9025-518c9c0d5111",
                     "name": "Akio Ogino",
                     "img": "https://static.wikia.nocookie.net/studio-ghibli/images/4/47/Akio_Ogino.jpg",
@@ -1308,7 +1298,7 @@ export default {
                     "terrain": "TODO",
                     "surface_water": "40",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -1319,7 +1309,7 @@ export default {
                     "terrain": "River",
                     "surface_water": "70",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 }
             ],
@@ -1576,7 +1566,7 @@ export default {
             "vehicles": [{
                 "id": "2354305f-dccd-4c44-a79e-cc60ba7376e6",
                 "name": "Howl's castle",
-                "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/12/HowlCastle.png",
+                "img": "http://4.bp.blogspot.com/-VpiUk0tuLR0/VG37r_zr3cI/AAAAAAAAMCg/OGA5sTjsan4/s1600/howls-moving-castle.jpg",
                 "description": "Wizard Howl's home. It's scale changes from scene to scene.",
                 "vehicle_class": "Moving castle",
                 "length": "unknown",
@@ -1807,7 +1797,7 @@ export default {
                     "terrain": "Ocean",
                     "surface_water": "100",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -1818,7 +1808,7 @@ export default {
                     "terrain": "Ocean",
                     "surface_water": "50",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 }
             ],
@@ -1933,7 +1923,7 @@ export default {
                     "terrain": "Forest",
                     "surface_water": "10",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 },
                 {
@@ -1944,7 +1934,7 @@ export default {
                     "terrain": "Under the floorboards",
                     "surface_water": "10",
                     "residents": [{
-                        name : "TODO"
+                        name: "TODO"
                     }]
                 }
             ],

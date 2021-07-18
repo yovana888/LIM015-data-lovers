@@ -14,7 +14,7 @@ const mainFilms = document.querySelector("#main-film");
 const homeLogo = document.querySelector("#home-logo");
 const homeMovies = document.querySelector("#show-section");
 let inputSearch = document.querySelector("#search");
-const statistics= document.getElementById("statistics");
+
 
 // Funcion Cargar Data en Card
 function loadData(data) {
@@ -22,7 +22,7 @@ function loadData(data) {
     for (let key in data) {
         cardsList.appendChild(showData(data[key]));
     }
-    axisChart();
+    drawChart();
 }
 
 // Cargar Toda la Data al inicio
@@ -101,60 +101,28 @@ homeMovies.addEventListener("click", () => {
 
 /*------------ Estadísticas del modal con ChartData.js----------- */
 
-statistics.addEventListener('change',()=>{
-    axisChart();
-});
-
-function axisChart(){
-    let valueSelect=statistics.value;
+function drawChart() {
     let x = [];
     let y = [];
-    let idChart;
-    if(valueSelect=='top-ten'){
-        let dataOrderScore = filterBySort('BestRated', allData); //Ordenamos de mayor a menor score
-        for (let key in dataOrderScore) {
-            if (key < 10) {
-                y.push(dataOrderScore[key].title);
-                x.push(dataOrderScore[key].rt_score);
-            } else {
-                break; //rompe el el ciclo
-            }
-        }
-        idChart ="chart-one";
-    }else{
-        for (let key in allData){
-            let totalCharacters= allData[key].people.length;
-            x.push(totalCharacters);
-            y.push(allData[key].title);
-        }
-        idChart = "chart-two";
+    let dataOrderLenghtPeople = filterBySort('totalCharacters', allData);
+    for (let key in dataOrderLenghtPeople) {
+        let totalCharacters = dataOrderLenghtPeople[key].people.length;
+        x.push(totalCharacters);
+        y.push(dataOrderLenghtPeople[key].title);
     }
-    drawChart(x,y,idChart);
-}
-function drawChart(x,y,idChart){
-    let min;
-    let max;
-    let canvaOcultar;
-    if( idChart == "chart-one"){
-        min=90;
-        max=100;
-        canvaOcultar="chart-two";
-    }else{
-        min=4;
-        max=13;
-        canvaOcultar="chart-one";
-    }
-    new Chart(idChart, {
+
+    //Dibujamos el Grafico
+
+    new Chart('chart-canva', {
         type: 'horizontalBar',
         data: {
             labels: y,
             datasets: [{
-                backgroundColor: "#7a6aef",
+                backgroundColor: "#a18bf8",
                 data: x
             }]
         },
         options: {
-
             legend: { display: false },
             scales: {
                 xAxes: [{
@@ -163,13 +131,13 @@ function drawChart(x,y,idChart){
                         color: "#efeeee",
                     },
                     ticks: {
-                        min: min,
-                        max: max
+                        min: 4,
+                        max: 13
                     },
                 }],
                 yAxes: [{
-                    barPercentage: 0.7,
-                    padding:10,
+                    barPercentage: 0.9,
+                    padding: 10,
                     gridLines: {
                         display: false
                     }
@@ -177,6 +145,5 @@ function drawChart(x,y,idChart){
             }
         }
     });
-    document.getElementById(idChart).style.display="block";
-    document.getElementById(canvaOcultar).style.display="none";
+
 }
