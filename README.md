@@ -92,7 +92,4 @@ Para finalizar añadimos una breve descripción de cada película al lado de la 
 
 👀 link del proyecto ---> [DATA GHIBLI](https://gisselp.github.io/LIM015-data-lovers/src/)
 
-
-Add New Text en the readme, with objetib of make test
-
-Add The second text test with git 
+Dale otra pruebita :D
