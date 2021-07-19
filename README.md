@@ -1,30 +1,63 @@
-# Data Lovers
+# DATA GHIBLI
+DATA GHIBLI es una plataforma web que brinda a los usuarios información detallada sobre las películas del Studio Ghibli. Desde ¿quién es el director de El viaje de Chihiro? o en ¿qué año se realizó Mi vecino Totoro?, todas las respuestas están en esta página web.
 
+
+## Studio Ghibli 🚀
+Studio Ghibi es un estudio de animación japonesa que a través de los años ha logrado tener mucho reconocimiento por la crítica considerándolo uno de los mejores estudios de animación del mundo. El éxito también se ve reflejado en la taquilla pues no solo ha cautivado a japoneses, si no que también al público internacional. Sus películas fueron parte de la vida de muchas personas. Adultos, jóvenes y niños crecieron viendo sus animaciones, dándoles aprendizajes y vivencias que nunca olvidarán. Por eso es importante tener una plataforma en el que personas de cualquier edad puedan acceder a la información de su película favorita del Studio Ghibli.
+
+## Investigación 🔎
+### Historias de Usuario
+Las historias de usuario son descripciones cortas y simples de una característica contada desde la perspectiva de un usuario.
+
+#### Historia 1
+*Yo como usuario web, quiero una página que me permita navegar de manera intuitiva y adaptable para acceder desde otros dispositivos.*
+- Criterios de aceptación
+    -La interfaz debe mostrar todas las películas del Studio Ghibli de forma ordenada.
+    -Debe tener una estructura visual adecuada ( header, main, footer)
+    -Tener una paleta de colores que represente el Studio Ghibli.
+    -Tener datos adicionales del Studio Ghibli.(redes sociales,páginas web e información extra)
+    -Debe tener un diseño que se adapte a todo tipo de dispositivos.
+
+#### Historia 2
+*Yo como visitante, quiero un filtro de búsqueda acceder de manera más rápida a las películas.*
+- Criterios de aceptación
+    -Tiene que tener un buscador que muestre las películas que se pidan.
+    -Debe tener filtros de distintas categorías(directores, productores,etc).
+    -También que se pueda ordenar por año de realización. De los más recientes a los más antiguos.
+    -También que se pueda ordenar alfabéticamente.
+    -En caso de que no se encuentre resultados de su busqueda mostrar un mensaje y alternativamente pueda limpiar sus filtros.
+
+#### Historia 3
+*Yo como programador, quiero acceder a distintas partes de la web para que me entretenga y que no me vaya de la página.*
+- Criterios de aceptación
+    -El usuario al darle click a la película, puede acceder a otra ventana.
+    -Asi mismo debe haber un botón que retorne a su anterior ventana que navego
+    -En esa ventana se muestra toda la información, desde personajes duración valoración, etc.
+
+#### Historia 4
+*Yo como dibujante,quiero saber los personajes de cada película para conocer sobre sus características físicas.*
+- Criterios de aceptación
+    -Todas las películas tienen a sus personajes en la sección de información.
+    -Las características deben de estar al lado de la foto del personaje.
+    -Adicionalmente se deberá tener información sobre locaciones y vehículos únicos en cada una de las animaciones.
+    -Las imágenes deben ser responsivas.
+
+## Realización ⚙️
+
+#### Prototipo de baja fidelidad
+
+![prototipo-dibujo](src/img/prototipos.png)}
+
+#### Prototipo de alta fidelidad
 ![prototipo](src/img/prototipo.png)
 ![prototipo](src/img/android.png)
 
-![prototipo-dibujo](src/img/prototipos.png)}
+
+
 ![prototipo-dibujo](src/img/statistics.png)
-# Título del Proyecto
-
-_Acá va un párrafo que describa lo que es el proyecto_
-
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
 
 
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
-
-### Instalación 🔧
+### Instalación ⚙️
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
