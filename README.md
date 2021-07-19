@@ -8,6 +8,13 @@ Studio Ghibi es un estudio de animación japonesa que a través de los años ha 
 ![studio ghibli](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ghibli2-1548333192.jpg)
 
 ## Investigación 🔎
+
+### Análisis de Otras Páginas Web en Relación al Studio Ghibli
+Investigando otras Plataformas Web que brindan información en referencia a las películas del Studio Ghibli, el contenido es un poco limitado, ya que los usuarios o fans a veces desean saber un poco más
+sobre los personajes, locaciones o vehículos que aparecen en una película en particular; así mismo 
+algunos no contaban con filtros para realizar una búsqueda más acertada y por último las interfaces era un tanto seria para el contenido que muestran a sus usuarios; por lo visto de lo anterior hemos planteado
+las historias de usuario a fin de implementar una nueva alternativa para la visualización de las películas de este genial estudio de animación.
+
 ### Historias de Usuario
 Las historias de usuario son descripciones cortas y simples de una característica contada desde la perspectiva de un usuario.
 
@@ -53,107 +60,31 @@ Los usuarios pueden acceder, buscar y filtrar de una manera intuitiva todas las 
 
 ## Realización ⚙️
 
-#### Prototipo de baja fidelidad
+### Prototipo de baja fidelidad
 La primera imagen refleja el inicio de la pantalla. Nos basamos bastante en el diseño de Netflix al añadir un slider y un carrusel donde irían las películas.
 Al dalre click a la película se abrirá la segunda pantalla en el que se mostrará las características de toda la película como personajes, locaciones y vehículos.
 
 ![prototipo-dibujo](src/img/prototipos.png)
 
-#### Prototipo de alta fidelidad
-Luego de recbir feedback nos
+### Prototipo de alta fidelidad
+#### Primera interfaz
+Ocurrieron algunos cambios respecto a nuestra versión anterior. En esta aún se mantendría el carrusel de películas pero se añadiría un segunda página con los filtros correspondientes.
+
 ![primer-prototipo](src/img/prototipo-2.png)
+
+Luego de un testeo nos sugirieron que fusionemos ambas pantallas para que sea más práctico a la hora de buscar las películas. 
+
 ![segundo-prototipo](src/img/prototipo-3.png)
+
+Para finalizar añadimos una breve descripción de cada película al lado de la imagen para que al darle click se abra otra pantalla con las características correspondientes de cada película.
+
 ![prototipo-final](src/img/prototipo.png)
+ 
+ Aquí la versión para celulares.
+
 ![prototipo](src/img/android.png)
 
+### Proyecto culminado
 
+👀 link del proyecto ---> [DATA GHIBLI](https://gisselp.github.io/LIM015-data-lovers/src/)
 
-![prototipo-dibujo](src/img/statistics.png)
-
-
-### Instalación ⚙️
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
