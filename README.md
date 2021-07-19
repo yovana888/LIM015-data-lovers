@@ -61,8 +61,8 @@ Al dalre click a la película se abrirá la segunda pantalla en el que se mostra
 
 #### Prototipo de alta fidelidad
 Luego de recbir feedback nos
-![primer-prototipo](src/img/prototipo-3.png)
-![segundo-prototipo](src/img/prototipo-2.png)
+![primer-prototipo](src/img/prototipo-2.png)
+![segundo-prototipo](src/img/prototipo-3.png)
 ![prototipo-final](src/img/prototipo.png)
 ![prototipo](src/img/android.png)
 
