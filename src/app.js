@@ -1,18 +1,18 @@
 addEventListener('DOMContentLoaded', () => {
-    /*----botón de hamburguesa---- */
+    /*---- botón de hamburguesa ---- */
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
     navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         })
-        /*----botón de filtros---- */
+    /*------ botón de filtros ---- */
     const iconFilter = document.querySelector('.icon-filter');
     const navFilter = document.querySelector('.input-data-selector');
     iconFilter.addEventListener('click', () => {
         navFilter.classList.toggle('show-filter');
     })
 
-    /*---- botón de movies---- */
+    /*----- botón de movies ---- */
     const showSection = document.getElementById('show-section')
     showSection.addEventListener('click', () => {
             const navMenu = document.querySelector('.nav-menu');
