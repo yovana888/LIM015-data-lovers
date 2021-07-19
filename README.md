@@ -12,35 +12,35 @@ Las historias de usuario son descripciones cortas y simples de una característi
 #### Historia 1
 *Yo como usuario web, quiero una página que me permita navegar de manera intuitiva y adaptable para acceder desde otros dispositivos.*
 - Criterios de aceptación
-    -La interfaz debe mostrar todas las películas del Studio Ghibli de forma ordenada.
-    -Debe tener una estructura visual adecuada ( header, main, footer)
-    -Tener una paleta de colores que represente el Studio Ghibli.
-    -Tener datos adicionales del Studio Ghibli.(redes sociales,páginas web e información extra)
-    -Debe tener un diseño que se adapte a todo tipo de dispositivos.
+    - La interfaz debe mostrar todas las películas del Studio Ghibli de forma ordenada.
+    - Debe tener una estructura visual adecuada ( header, main, footer)
+    - Tener una paleta de colores que represente el Studio Ghibli.
+    - Tener datos adicionales del Studio Ghibli.(redes sociales,páginas web e información extra)
+    - Debe tener un diseño que se adapte a todo tipo de dispositivos.
 
 #### Historia 2
 *Yo como visitante, quiero un filtro de búsqueda acceder de manera más rápida a las películas.*
 - Criterios de aceptación
-    -Tiene que tener un buscador que muestre las películas que se pidan.
-    -Debe tener filtros de distintas categorías(directores, productores,etc).
-    -También que se pueda ordenar por año de realización. De los más recientes a los más antiguos.
-    -También que se pueda ordenar alfabéticamente.
-    -En caso de que no se encuentre resultados de su busqueda mostrar un mensaje y alternativamente pueda limpiar sus filtros.
+    - Tiene que tener un buscador que muestre las películas que se pidan.
+    - Debe tener filtros de distintas categorías(directores, productores,etc).
+    - También que se pueda ordenar por año de realización. De los más recientes a los más antiguos.
+    - También que se pueda ordenar alfabéticamente.
+    - En caso de que no se encuentre resultados de su busqueda mostrar un mensaje y alternativamente pueda limpiar sus filtros.
 
 #### Historia 3
 *Yo como programador, quiero acceder a distintas partes de la web para que me entretenga y que no me vaya de la página.*
 - Criterios de aceptación
-    -El usuario al darle click a la película, puede acceder a otra ventana.
-    -Asi mismo debe haber un botón que retorne a su anterior ventana que navego
-    -En esa ventana se muestra toda la información, desde personajes duración valoración, etc.
+    - El usuario al darle click a la película, puede acceder a otra ventana.
+    - Asi mismo debe haber un botón que retorne a su anterior ventana que navego
+    - En esa ventana se muestra toda la información, desde personajes duración valoración, etc.
 
 #### Historia 4
 *Yo como dibujante,quiero saber los personajes de cada película para conocer sobre sus características físicas.*
 - Criterios de aceptación
-    -Todas las películas tienen a sus personajes en la sección de información.
-    -Las características deben de estar al lado de la foto del personaje.
-    -Adicionalmente se deberá tener información sobre locaciones y vehículos únicos en cada una de las animaciones.
-    -Las imágenes deben ser responsivas.
+    - Todas las películas tienen a sus personajes en la sección de información.
+    - Las características deben de estar al lado de la foto del personaje.
+    - Adicionalmente se deberá tener información sobre locaciones y vehículos únicos en cada una de las animaciones.
+    - Las imágenes deben ser responsivas.
 
 ## Realización ⚙️
 
