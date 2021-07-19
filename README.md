@@ -1,10 +1,10 @@
 # DATA GHIBLI
-DATA GHIBLI es una plataforma web que brinda a los usuarios información detallada sobre las películas del Studio Ghibli. Desde ¿quién es el director de El viaje de Chihiro? o en ¿qué año se realizó Mi vecino Totoro?, todas las respuestas están en esta página web.
 
+DATA GHIBLI es una plataforma web que brinda a los usuarios información detallada sobre las películas del Studio Ghibli. Desde ¿quién es el director de El viaje de Chihiro? o en ¿qué año se realizó Mi vecino Totoro?, todas las respuestas están en esta página web.
 
 ## Studio Ghibli 🚀
 Studio Ghibi es un estudio de animación japonesa que a través de los años ha logrado tener mucho reconocimiento por la crítica considerándolo uno de los mejores estudios de animación del mundo. El éxito también se ve reflejado en la taquilla pues no solo ha cautivado a japoneses, si no que también al público internacional. Sus películas fueron parte de la vida de muchas personas. Adultos, jóvenes y niños crecieron viendo sus animaciones, dándoles aprendizajes y vivencias que nunca olvidarán. Por eso es importante tener una plataforma en el que personas de cualquier edad puedan acceder a la información de su película favorita del Studio Ghibli.
-
+![studio ghibli](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ghibli2-1548333192.jpg)
 ## Investigación 🔎
 ### Historias de Usuario
 Las historias de usuario son descripciones cortas y simples de una característica contada desde la perspectiva de un usuario.
@@ -42,13 +42,21 @@ Las historias de usuario son descripciones cortas y simples de una característi
     - Adicionalmente se deberá tener información sobre locaciones y vehículos únicos en cada una de las animaciones.
     - Las imágenes deben ser responsivas.
 
+## Definición del producto 📌
+
+#### Usuarios
+El público objetivo de esta web son personas que han visto al menos una película del Studio Ghibli y que quieran conocer un poco más de las películas como directores, productores o características de sus personajes favoritos. 
+#### Objetivo
+Los usuarios pueden acceder, buscar y filtrar de una manera intuitiva todas las películas sin tener ningún problema de usabilidad. 
+
 ## Realización ⚙️
 
 #### Prototipo de baja fidelidad
-
-![prototipo-dibujo](src/img/prototipos.png)}
+La primera imagen refleja el inicio de la pantalla y la segunda cómo se abrirá con las características de los personajes .
+![prototipo-dibujo](src/img/prototipos.png)
 
 #### Prototipo de alta fidelidad
+
 ![prototipo](src/img/prototipo.png)
 ![prototipo](src/img/android.png)
 
