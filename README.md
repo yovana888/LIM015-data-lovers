@@ -92,5 +92,5 @@ Para finalizar añadimos una breve descripción de cada película al lado de la 
 
 👀 link del proyecto ---> [DATA GHIBLI](https://gisselp.github.io/LIM015-data-lovers/src/)
 
-Tokyo No Revengers,Cambiando Algo
-Buen opening :D
+Link otro :D
+
