@@ -81,10 +81,12 @@ Luego de un testeo nos sugirieron que fusionemos ambas pantallas para que sea m�
 Para finalizar añadimos una breve descripción de cada película al lado de la imagen para que al darle click se abra otra pantalla con las características correspondientes de cada película.
 
 ![prototipo-final](src/img/prototipo.png)
- 
- Aquí la versión para celulares.
+
+#### Interfaz para celulares
 
 ![prototipo](src/img/android.png)
+
+👀Pst entra aquí jejeje -->[FIGMA](https://www.figma.com/proto/rzrbPxfmL6ATrUUsLsfJ6a/Studio-Ghibli-Prototipado?node-id=52%3A54&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A5)
 
 ### Proyecto culminado
 
