@@ -94,3 +94,5 @@ Para finalizar añadimos una breve descripción de cada película al lado de la 
 
 
 Add New Text en the readme, with objetib of make test
+
+Add The second text test with git 
