@@ -72,10 +72,12 @@ Ocurrieron algunos cambios respecto a nuestra versión anterior. En esta aún se
 
 ![primer-prototipo](src/img/prototipo-2.png)
 
+#### Segunda interfaz
 Luego de un testeo nos sugirieron que fusionemos ambas pantallas para que sea más práctico a la hora de buscar las películas. 
 
 ![segundo-prototipo](src/img/prototipo-3.png)
 
+#### Interfaz Final
 Para finalizar añadimos una breve descripción de cada película al lado de la imagen para que al darle click se abra otra pantalla con las características correspondientes de cada película.
 
 ![prototipo-final](src/img/prototipo.png)
